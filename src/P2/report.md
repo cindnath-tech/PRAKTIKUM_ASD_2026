@@ -39,3 +39,24 @@ kriteria apa saja yang digunakan untuk menentukan nilai kinerja tersebut, dan ap
 dikembalikan (di-return-kan) oleh method nilaiKinerja() tersebut? 
 
     - nilaikerja() akan menerima nilai ipk lalu dilakukan pengecekan nilai ipk dengan kondisi jika nilai ipk >= 3.5 maka kinerja sangat baik, jika >= 3.0 maka kinerja baik, jika >= 2.0 maka kinerja cukup, dan selain kondisi tersebut kinerja kurang. Hasil dari kondisi tersebut akan dikembalikan untuk ditampilkan ketika method dipanggil
+
+## 2.2 Percobaan 2
+
+Hasil dari percobaan 2 :
+
+![percobaan 2](image/percobaan2.png)
+
+### Pertanyaan Percobaan 2
+1. Pada class MahasiswaMain, tunjukkan baris kode program yang digunakan untuk proses 
+instansiasi! Apa nama object yang dihasilkan?
+
+    - nama object yang dihasilkan adalah mhs1
+![pertanyaan 1](image/per2_pertanyaan.png)
+
+2. Bagaimana cara mengakses atribut dan method dari suatu objek? 
+
+    - Untuk mengakses atribut dapat dilakukan dengan namaObject.namaAtribut = nilai; dan untuk mengakses method dapat dilakukan dengan namaObject.namaMethod();
+
+3. Mengapa hasil output pemanggilan method tampilkanInformasi() pertama dan kedua berbeda?
+
+    - Karena sebelum pemanggilan method tampilkanInformasi() yang kedua telah dilakukan perubahan nilai atribut object sehingga hasil yang dihasilkan akan berbeda dengan method tampilkanInformasi() yang pertama
