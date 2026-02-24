@@ -90,3 +90,8 @@ Hasil dari percobaan 3 :
 Hasil dari latihan 1 :
 
 ![latihan 1](image/latihan1.png)
+
+### Latihan 2
+
+Hasil dari latihan 2 :
+![latihan 2](image/latihan2.png)
