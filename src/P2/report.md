@@ -82,3 +82,11 @@ Hasil dari percobaan 3 :
 5.  Buat object baru dengan nama mhs<NamaMahasiswa> menggunakan konstruktor berparameter dari class Mahasiswa! 
 
 ![pertanyaan 5](image/per3_pertanyaan5.png)
+
+## 2.4 Latihan Praktikum
+
+### Latihan 1
+
+Hasil dari latihan 1 :
+
+![latihan 1](image/latihan1.png)
