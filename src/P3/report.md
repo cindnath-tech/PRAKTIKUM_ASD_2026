@@ -41,3 +41,46 @@ IPK     : 3.8
     - melakukan proses instansiasi untuk membuat objek dan mengisi nilai dari elemen array
 5. Mengapa class Mahasiswa dan MahasiswaDemo dipisahkan pada uji coba 3.2? 
     - karena dengan dipisah dapat untuk atribut dapat berfokus di class Mahasiswa sedangkan class MahasiswaDemo difokuskan pada logika eksekusinya agar lebih mudah dalam mengelola data
+
+## 3.3 Percobaan 2
+
+Hasil dari percobaan 2 : 
+
+```
+Masukkan Data Mahasiswa ke-1
+NIM   : 254107867
+Nama  : Jace
+Kelas : TI - 2F
+IPK   : 4.00
+-------------------------------
+Masukkan Data Mahasiswa ke-2
+NIM   : 254108987
+Nama  : Inas
+Kelas : TM - 1M
+IPK   : 3.89
+-------------------------------
+Masukkan Data Mahasiswa ke-3
+NIM   : 254106547
+Nama  : Johan
+Kelas : TE - 2A
+IPK   : 3.88
+-------------------------------
+Data Mahasiwa ke-2
+NIM     : 254107867
+Nama    : Jace
+Kelas   : TI - 2F
+IPK     : 4.0
+----------------------------
+Data Mahasiwa ke-2
+NIM     : 254108987
+Nama    : Inas
+Kelas   : TM - 1M
+IPK     : 3.89
+----------------------------
+Data Mahasiwa ke-2
+NIM     : 254106547
+Nama    : Johan
+Kelas   : TE - 2A
+IPK     : 3.88
+----------------------------
+```
