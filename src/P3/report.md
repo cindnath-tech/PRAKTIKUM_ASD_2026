@@ -84,3 +84,47 @@ Kelas   : TE - 2A
 IPK     : 3.88
 ----------------------------
 ```
+
+### Pertanyaan Percobaan 2
+
+1. Tambahkan method cetakInfo() pada class Mahasiswa kemudian modifikasi kode program pada langkah no 3. 
+```
+Masukkan Data Mahasiswa ke-1
+NIM   : 254107564
+Nama  : Jace
+Kelas : TI - 2G
+IPK   : 3.88
+-------------------------------
+Masukkan Data Mahasiswa ke-2
+NIM   : 254106897
+Nama  : Johan
+Kelas : TM - 2G
+IPK   : 4.00
+-------------------------------
+Masukkan Data Mahasiswa ke-3
+NIM   : 254103456
+Nama  : Rama
+Kelas : TE - 3D
+IPK   : 3.76
+-------------------------------
+Data Mahasiwa ke-2
+NIM     : 254107564
+Nama    : Jace
+Kelas   : TI - 2G
+IPK     : 3.88
+----------------------------
+Data Mahasiwa ke-2
+NIM     : 254106897
+Nama    : Johan
+Kelas   : TM - 2G
+IPK     : 4.0
+----------------------------
+Data Mahasiwa ke-2
+NIM     : 254103456
+Nama    : Rama
+Kelas   : TE - 3D
+IPK     : 3.76
+----------------------------
+```
+2. Misalkan Anda punya array baru bertipe array of Mahasiswa dengan nama myArrayOfMahasiswa. Mengapa kode berikut menyebabkan error?
+    - karena myArrayOfMahasiswa hanya membuat slot sebanyak 3 kali namun varibelnya belum dideklarasikan sehingga isi dari arraynya masih null
