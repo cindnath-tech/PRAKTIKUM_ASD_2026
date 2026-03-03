@@ -28,3 +28,16 @@ Kelas   : TI-2E
 IPK     : 3.8
 ----------------------------------
 ```
+
+### Pertanyaan Percobaan 1
+
+1. Berdasarkan uji coba 3.2, apakah class yang akan dibuat array of object harus selalu memiliki atribut dan sekaligus method Jelaskan!
+    - tidak harus karena class bisa hanya berisi atribut saja maupun method saja, atribut digunakan untuk menyimpan data yang akan ditambilkan
+2. Apa yang dilakukan oleh kode program berikut?
+    - kode program diatas akan membuat arrMahsiswa yang dapat menampunng tiga object mahasiswa
+3. Apakah class Mahasiswa memiliki konstruktor? Jika tidak kenapa bisa dilakukan pemanggilan konstruktur pada baris program berikut?
+    - tidak memiliki konstruktor default namun dapat memanggil kode program berikut karena java otomatis menyediakan konstruktor default
+4. Apa yang dilakukan oleh kode program berikut?
+    - melakukan proses instansiasi untuk membuat objek dan mengisi nilai dari elemen array
+5. Mengapa class Mahasiswa dan MahasiswaDemo dipisahkan pada uji coba 3.2? 
+    - karena dengan dipisah dapat untuk atribut dapat berfokus di class Mahasiswa sedangkan class MahasiswaDemo difokuskan pada logika eksekusinya agar lebih mudah dalam mengelola data
