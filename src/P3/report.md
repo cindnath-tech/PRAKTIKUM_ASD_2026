@@ -128,3 +128,46 @@ IPK     : 3.76
 ```
 2. Misalkan Anda punya array baru bertipe array of Mahasiswa dengan nama myArrayOfMahasiswa. Mengapa kode berikut menyebabkan error?
     - karena myArrayOfMahasiswa hanya membuat slot sebanyak 3 kali namun varibelnya belum dideklarasikan sehingga isi dari arraynya masih null
+
+## 3.4 Percobaan 3
+
+Hasil dari percobaan 3 :
+
+```
+Masukkan Data Mahasiswa ke-1
+Kode       : 12345
+Nama       : Algoritma & Struktur Data
+Sks        : 2
+Jumlah Jam : 6
+-------------------------------------
+Masukkan Data Mahasiswa ke-2
+Kode       : 54321
+Nama       : Sistem Basis Data
+Sks        : 2
+Jumlah Jam : 4
+--------------------------------------
+Masukkan Data Mahasiswa ke-3
+Kode       : 87654
+Nama       : Dasar Pemograman
+Sks        : 2
+Jumlah Jam : 4
+--------------------------------------
+Data Matakuliah ke-1
+Kode        : 12345
+Nama        :  Algoritma & Struktur Data
+Sks         : 2
+Jumlah Jam  : 6
+---------------------------------------
+Data Matakuliah ke-2
+Kode        : 54321
+Nama        :  Sistem Basis Data
+Sks         : 2
+Jumlah Jam  : 4
+---------------------------------------
+Data Matakuliah ke-3
+Kode        : 87654
+Nama        :  Dasar Pemograman
+Sks         : 2
+Jumlah Jam  : 4
+---------------------------------------
+```
