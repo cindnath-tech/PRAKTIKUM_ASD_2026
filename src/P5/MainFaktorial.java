@@ -1,3 +1,4 @@
+package P5;
 import java.util.Scanner;
 
 public class MainFaktorial {
@@ -11,4 +12,5 @@ public class MainFaktorial {
         System.out.println("Nilai Faktorial " + nilai + " menggunakan BF : " +fk.faktorialBF(nilai));
         System.out.println("Nilai faktorial " + nilai + " menggunakan DC : " +fk.faktorialDC(nilai));
     }
+
 }

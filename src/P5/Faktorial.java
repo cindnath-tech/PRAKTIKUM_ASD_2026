@@ -1,3 +1,4 @@
+package P5;
 public class Faktorial {
     
     int faktorialBF(int n) {
@@ -16,4 +17,5 @@ public class Faktorial {
             return fakto;
         }
     }
+    
 }
