@@ -200,3 +200,35 @@ System.out.print("Masukkan jumlah data : ");
     int jmlData = cindy.nextInt();
     cindy.nextLine();
 ```
+
+## Tugas 1
+
+Hasil dari percobaan tugas 1 : 
+
+```
+Masukkan jumlah data dosen : 2
+Masukkan Data Dosen ke-1
+Kode  : 0503424
+Nama  : Aisyah Kamila
+Jenis Kelamin (L / P) : P
+Usia  : 24
+---------------------------------------
+Masukkan Data Dosen ke-2
+Kode  : 345235
+Nama  : Akmal Ahmad
+Jenis Kelamin (L / P) : L
+Usia  : 30
+---------------------------------------
+Data Dosen ke-1
+Kode : 0503424
+Nama : Aisyah Kamila
+Jenis Kelamin : Wanita
+Usia : 24
+---------------------------------------
+Data Dosen ke-2
+Kode : 345235
+Nama : Akmal Ahmad
+Jenis Kelamin : Pria
+Usia : 30
+---------------------------------------
+```
