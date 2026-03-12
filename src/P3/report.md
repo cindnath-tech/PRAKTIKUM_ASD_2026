@@ -154,20 +154,49 @@ Jumlah Jam : 4
 --------------------------------------
 Data Matakuliah ke-1
 Kode        : 12345
-Nama        :  Algoritma & Struktur Data
+Nama        : Algoritma & Struktur Data
 Sks         : 2
 Jumlah Jam  : 6
 ---------------------------------------
 Data Matakuliah ke-2
 Kode        : 54321
-Nama        :  Sistem Basis Data
+Nama        : Sistem Basis Data
 Sks         : 2
 Jumlah Jam  : 4
 ---------------------------------------
 Data Matakuliah ke-3
 Kode        : 87654
-Nama        :  Dasar Pemograman
+Nama        : Dasar Pemograman
 Sks         : 2
 Jumlah Jam  : 4
 ---------------------------------------
+```
+
+### Pertanyaan Percobaan 
+
+1. Apakah suatu class dapat memiliki lebih dari 1 constructor? Jika iya, berikan contohnya 
+    - bisa, contohnya pada file Matakuliah08 memiliki constructor dengan parameter kode, nama, sks, dan jumlah jam
+2. Tambahkan method tambahData() pada class Matakuliah, kemudian gunakan method tersebut di class MatakuliahDemo untuk menambahkan data Matakuliah 
+```
+void tambahData (String kd, String nm, int sks, int jmlJam) {
+        kode = kd;
+        nama = nm;
+        this.sks = sks;
+        jumlahjam = jmlJam;
+    }
+```
+3. Tambahkan method cetakInfo() pada class Matakuliah, kemudian gunakan method tersebut di class MatakuliahDemo untuk menampilkan data hasil inputan di layar 
+```
+void cetakInfo() {
+        System.out.println("Kode        : " +kode);
+        System.out.println("Nama        : " +nama);
+        System.out.println("Sks         : " +sks);
+        System.out.println("Jumlah Jam  : " +jumlahjam);
+    }
+```
+4. Modifikasi kode program pada class MatakuliahDemo agar panjang (jumlah elemen) dari array of object Matakuliah ditentukan oleh user melalui input dengan Scanner 
+```
+System.out.print("Masukkan jumlah data : ");
+    int jmlData = cindy.nextInt();
+    cindy.nextLine();
 ```
