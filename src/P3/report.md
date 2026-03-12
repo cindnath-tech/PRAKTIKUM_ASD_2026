@@ -232,3 +232,63 @@ Jenis Kelamin : Pria
 Usia : 30
 ---------------------------------------
 ```
+
+## Tugas 2
+
+Hasil dari percobaan tugas 2 :
+
+```
+Masukkan jumlah data dosen : 3
+Masukkan Data Dosen ke-1
+Kode  : 0504234
+Nama  : Aisyah Kamila
+Jenis Kelamin (L / P) : P
+Usia  : 24
+---------------------------------------
+Masukkan Data Dosen ke-2
+Kode  : 3452335 
+Nama  : Akmal Ahmad
+Jenis Kelamin (L / P) : L
+Usia  : 30
+---------------------------------------
+Masukkan Data Dosen ke-3
+Kode  : 3423533
+Nama  : Lia Nial
+Jenis Kelamin (L / P) : P
+Usia  : 54
+---------------------------------------
+--- Data Semua Dosen ---
+Kode : 0504234
+Nama : Aisyah Kamila
+Jenis Kelamin : Wanita
+Usia : 24
+---------------------------------------
+Kode : 3452335
+Nama : Akmal Ahmad
+Jenis Kelamin : Pria
+Usia : 30
+---------------------------------------
+Kode : 3423533
+Nama : Lia Nial
+Jenis Kelamin : Wanita
+Usia : 54
+---------------------------------------
+--- Jumlah Dosen Per Jenis Kelamin ---
+Jumlah dosen laki - laki : 1 orang
+Jumlah dosen perempuan : 2 orang
+--- Rata - Rata Usia Dosen ---
+Rata - rata usia dosen laki - laki : 30
+Rata - rata usia dosen perempuan : 39
+--- Dosen Paling Muda ---
+Kode : 0504234
+Nama : Aisyah Kamila
+Jenis Kelamin : Wanita
+Usia : 24
+---------------------------------------
+--- Dosen Paling Tua ---
+Kode : 3423533
+Nama : Lia Nial
+Jenis Kelamin : Wanita
+Usia : 54
+---------------------------------------
+```

@@ -33,9 +33,23 @@ public class DosenDemo08 {
             arrDosen08[i] = new Dosen08(kode, nama, jenisKelamin, usia);
         }
 
-        for (int i = 0; i < arrDosen08.length; i++) {
-            System.out.println("Data Dosen ke-" +(i + 1));
-            arrDosen08[i].cetakInfo();
-        }
+        // for (int i = 0; i < arrDosen08.length; i++) {
+        //     System.out.println("Data Dosen ke-" +(i + 1));
+        //     arrDosen08[i].cetakInfo();
+        // }
+
+        DataDosen08 data = new DataDosen08();
+
+        System.out.println("--- Data Semua Dosen ---");
+        data.dataSemuaDosen(arrDosen08);
+
+        System.out.println("--- Jumlah Dosen Per Jenis Kelamin ---");
+        data.jumlahDosenPerJenisKelamin(arrDosen08);
+
+        System.out.println("--- Rata - Rata Usia Dosen ---");
+        data.rerataUsiaDosenPerJenisKelamin(arrDosen08);
+
+        data.infoDosenPalingMuda(arrDosen08);
+        data.infoDosenPalingTua(arrDosen08);
     }
 }
