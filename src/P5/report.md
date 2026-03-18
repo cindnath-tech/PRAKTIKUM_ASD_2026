@@ -84,3 +84,18 @@ int pangkatBF() {
 ```
 4. Tarik kesimpulan tentang cara kerja method pangkatBF() dan pangkatDC()!
     - method pangkatBF() bekerja dengan cara mengalikan nilai secara berulang ulang menggunakan perulangan hingga nilai mencapai pada jumlah pangkat yang diinginkan. Method pangkatDC() bekerja dengan cara membagi masalah menjadi bagian yang lebih kecil (pangkat dibagi menjadi dua bagian) kemudan hasil dari setiap pangkat akan digabungkan kembali melalui proses combine
+
+## 5.4 Percobaan 3
+
+Hasil dari percobaan 3 :
+
+```
+Masukkan jumlah elemen : 5
+Masukkan keuntungan ke-1 : 10
+Masukkan keuntungan ke-2 : 20
+Masukkan keuntungan ke-3 : 30
+Masukkan keuntungan ke-4 : 40
+Masukkan keuntungan ke-5 : 50
+Toral keuntungan menggunakan brute force : 150.0
+Total keuntungan menggunakan divide and conquer : 150.0
+```
