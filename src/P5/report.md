@@ -60,3 +60,27 @@ HASIL PANGKAT DIVIDE AND CONQUER :
 4^5 : 1024
 6^7 : 279936
 ```
+
+### Pertanyaan Percobaan 2
+
+1. Jelaskan mengenai perbedaan 2 method yang dibuat yaitu pangkatBF() dan pangkatDC()! 
+    - pangkatBF() menghitung pangkat menggunakan perulangan sehingga kode akan mengalikan bilangan secara berulang sesuai dengan jumlah pangkat yang diminta sedangkan pangkatDC() menghitung pangkat menggunakan rekursi sehingga kode akan memecah masalah menjadi bagain yang lebih kecil dan nantinya hasilnya akan digabungkan kembali
+2. Apakah tahap combine sudah termasuk dalam kode tersebut Tunjukkan! 
+    - Tahap combine ada di kode berikut : 
+```
+return (pangkatDC(a, n/2) * pangkatDC(a, n/2) * a);
+return (pangkatDC(a, n/2) * pangkatDC(a, n/2) );
+```
+3. Pada method pangkatBF()terdapat parameter untuk melewatkan nilai yang akan dipangkatkan dan pangkat berapa, padahal di sisi lain di class Pangkat telah ada atribut nilai dan pangkat, apakah menurut Anda method tersebut tetap relevan untuk memiliki parameter? Apakah bisa jika method tersebut dibuat dengan tanpa parameter? Jika bisa, seperti apa method pangkatBF() yang tanpa parameter? 
+    - masih relevan karena bisa dipakai untuk nilai apapun tanpa bergantung dengan atribut class, berikut kode method pangkatBF() tanpa parameter : 
+```
+int pangkatBF() {
+        int hasil = 1;
+        for (int i = 1; i <= pangkat; i++) {
+            hasil  *= nilai;
+        }
+        return hasil;
+    }
+```
+4. Tarik kesimpulan tentang cara kerja method pangkatBF() dan pangkatDC()!
+    - method pangkatBF() bekerja dengan cara mengalikan nilai secara berulang ulang menggunakan perulangan hingga nilai mencapai pada jumlah pangkat yang diinginkan. Method pangkatDC() bekerja dengan cara membagi masalah menjadi bagian yang lebih kecil (pangkat dibagi menjadi dua bagian) kemudan hasil dari setiap pangkat akan digabungkan kembali melalui proses combine
