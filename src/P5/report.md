@@ -99,3 +99,20 @@ Masukkan keuntungan ke-5 : 50
 Toral keuntungan menggunakan brute force : 150.0
 Total keuntungan menggunakan divide and conquer : 150.0
 ```
+
+### Pertanyaan Percobaan 3
+
+1. Kenapa dibutuhkan variable mid pada method TotalDC()? 
+    - mid digunakan untuk menentukan titik tengah dari array serta mid akan membagi dua bagian array dalam metode divide and conquer sehingga pada bagian kiri memiliki indeks dari l sampai mid dan pada bagian kanan memiliki indkes dari mid + 1 sampai r
+2. Untuk apakah statement di bawah ini dilakukan dalam TotalDC()? 
+    - digunakan untuk menghitung jumlah nilai pada masing-masing bagian array. lsum digunakan untuk menghitung jumlah elemen di bagian kiri dan rsum digunakan untuk menghitung jumlah elemen di bagian kanan
+3. Kenapa diperlukan penjumlahan hasil lsum dan rsum seperti di bawah ini? 
+    - karena setelah dilakukan perhitungan tiap gabungan maka dilakukan combine (digabungkan) untuk mendapatkan nilai total keseluruhan
+4. Apakah base case dari totalDC()? 
+```
+if (l == r) {
+    return arr[l];
+    }
+```
+5. Tarik Kesimpulan tentang cara kerja totalDC()
+    - method totalDC() bekerja dengan membagi masalah menjadi bagian yang lebih kecil lalu menyelesaikan masing-masing bagian dan digabungkan hasilnya untuk mendapatkan nilai total keseluruhan. Array dibagi menjadi dua menggunakan mid lalu dihitung lsum dan rsum kemudian dilakukannya lsum + rsum
