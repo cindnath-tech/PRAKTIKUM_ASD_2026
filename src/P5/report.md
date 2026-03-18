@@ -116,3 +116,13 @@ if (l == r) {
 ```
 5. Tarik Kesimpulan tentang cara kerja totalDC()
     - method totalDC() bekerja dengan membagi masalah menjadi bagian yang lebih kecil lalu menyelesaikan masing-masing bagian dan digabungkan hasilnya untuk mendapatkan nilai total keseluruhan. Array dibagi menjadi dua menggunakan mid lalu dihitung lsum dan rsum kemudian dilakukannya lsum + rsum
+
+## Tugas
+
+Hasil run dari tugas : 
+
+```
+Nilai UTS Tertinggi : 92
+Nilai UTS Terendah : 76
+Rata-rata Nilai UAS : 85.375
+```
