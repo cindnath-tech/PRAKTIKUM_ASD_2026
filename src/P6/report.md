@@ -65,3 +65,62 @@ if (data[j] < data[min]) {
 
 4. Pada insertion sort, apakah tujuan dari perintah data[j + 1] = data[j];
 - Digunakan untuk menggeser elemen ke kanan agar elemen yang lebih kecil mendapatkan posisi urutan yang benar
+
+## Praktikum 2
+
+Hasil dari percobaan praktikum 2 :
+
+```
+Data mahasiswa sebelum sorting : 
+Nama    : Zidan
+NIM     : 123
+IPK     : 3.2
+Kelas   : 2A
+--------------------
+Nama    : Ayu
+NIM     : 124
+IPK     : 3.5
+Kelas   : 2A
+--------------------
+Nama    : Sofi
+NIM     : 125
+IPK     : 3.1
+Kelas   : 2A
+--------------------
+Nama    : Sita
+NIM     : 126
+IPK     : 3.9
+Kelas   : 2A
+--------------------
+Nama    : Miki
+NIM     : 127
+IPK     : 3.7
+Kelas   : 2A
+--------------------
+Data mahasiswa setelah sorting berdasarkan IPK (DESC) :
+Nama    : Sita
+NIM     : 126
+IPK     : 3.9
+Kelas   : 2A
+--------------------
+Nama    : Miki
+NIM     : 127
+IPK     : 3.7
+Kelas   : 2A
+--------------------
+Nama    : Ayu
+NIM     : 124
+IPK     : 3.5
+Kelas   : 2A
+--------------------
+Nama    : Zidan
+NIM     : 123
+IPK     : 3.2
+Kelas   : 2A
+--------------------
+Nama    : Sofi
+NIM     : 125
+IPK     : 3.1
+Kelas   : 2A
+--------------------
+```
