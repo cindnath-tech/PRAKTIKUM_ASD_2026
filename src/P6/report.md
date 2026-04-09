@@ -375,3 +375,33 @@ IPK     : 3.8
 Kelas   : 2C
 --------------------
 ```
+
+## Pertanyaan Percobaan 4
+Ubahlah fungsi pada InsertionSort sehingga fungsi ini dapat melaksanakan proses sorting dengan cara descending.
+```
+Nama    : Ila
+NIM     : 333
+IPK     : 3.8
+Kelas   : 2C
+--------------------
+Nama    : Ayu
+NIM     : 111
+IPK     : 3.7
+Kelas   : 2C
+--------------------
+Nama    : Yayuk
+NIM     : 555
+IPK     : 3.4
+Kelas   : 2C
+--------------------
+Nama    : Susi
+NIM     : 444
+IPK     : 3.1
+Kelas   : 2C
+--------------------
+Nama    : Dika
+NIM     : 222
+IPK     : 3.0
+Kelas   : 2C
+--------------------
+```
