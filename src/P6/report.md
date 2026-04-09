@@ -7,7 +7,7 @@
 
 # Jobsheet 6 - Sorting (Bubble, Selection, dan Insertion Sort)
 
-## Praktikum 1
+## Percobaan 1
 
 ### Sorting - Bubble Sort
 
@@ -42,7 +42,7 @@ Data sudah diurutkan dengan INSERTION SORT (ASC)
 3 4 9 10 40
 ```
 
-## Pertanyaan Praktikum 1
+## Pertanyaan Percobaan 1
 1. Jelaskan fungsi kode program berikut :
 ```
 if (data[j - 1] > data[j]) {
@@ -66,7 +66,7 @@ if (data[j] < data[min]) {
 4. Pada insertion sort, apakah tujuan dari perintah data[j + 1] = data[j];
 - Digunakan untuk menggeser elemen ke kanan agar elemen yang lebih kecil mendapatkan posisi urutan yang benar
 
-## Praktikum 2
+## Percobaan 2
 
 Hasil dari percobaan praktikum 2 :
 
@@ -125,7 +125,7 @@ Kelas   : 2A
 --------------------
 ```
 
-## Pertanyaan Praktikum 2
+## Pertanyaan Percoabaan 2
 
 1. Perhatikan perulangan di dalam bubbleSort() di bawah ini: 
 ```
@@ -191,7 +191,7 @@ Kelas   : 2B
 --------------------
 ```
 
-## Praktikum 3
+## Percobaan 3
 
 Hasil dari percobaan praktikum 3 :
 
@@ -276,3 +276,16 @@ IPK     : 3.9
 Kelas   : 2B
 --------------------
 ```
+
+## Pertanyaan Praktikum 3
+Di dalam method selection sort, terdapat baris program seperti di bawah ini: 
+```
+int idxMin = i;
+for (int j = i + 1; j < listMhs.length; j++) {
+    if (listMhs[j].ipk < listMhs[idxMin].ipk) {
+        idxMin = j;
+        }
+    }
+```
+Untuk apakah proses tersebut, jelaskan!
+- Proses tersbeut digunakan untuk mencari indeks elemen dengan nilai IPK terkecil lalu akan dilakukan proses swap
