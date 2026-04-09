@@ -405,3 +405,109 @@ IPK     : 3.0
 Kelas   : 2C
 --------------------
 ```
+
+## Tugas
+```
+Masukkan jumlah dosen : 3
+
+=== MENU ===
+1. Tambah Data
+2. Tampil Data
+3. Sorting ASC berdasarkan usia
+4. Sorting DSC berdasarkan usia
+5. Sorting usia menggunakan insertion sort
+6. Keluar
+
+Masukkan menu : 1
+Kode : 123
+Nama : Ayu
+Jenis Kelamin (L/P) : P
+Usia : 34
+------------------
+Kode : 654
+Nama : Johan
+Jenis Kelamin (L/P) : L
+Usia : 20
+------------------
+Kode : 764
+Nama : Jace
+Jenis Kelamin (L/P) : P
+Usia : 25
+------------------
+
+Masukkan menu : 2
+
+Data seluruh dosen
+Kode            : 123
+Nama            : Ayu
+Jenis Kelamin   : Perempuan
+Usia            : 34
+----------------
+Kode            : 654
+Nama            : Johan
+Jenis Kelamin   : Laki-Laki
+Usia            : 20
+----------------
+Kode            : 764
+Nama            : Jace
+Jenis Kelamin   : Perempuan
+Usia            : 25
+----------------
+
+Masukkan menu : 3
+Data diurutkan berdasarkan usia (ASC)
+Kode            : 654
+Nama            : Johan
+Jenis Kelamin   : Laki-Laki
+Usia            : 20
+----------------
+Kode            : 764
+Nama            : Jace
+Jenis Kelamin   : Perempuan
+Usia            : 25
+----------------
+Kode            : 123
+Nama            : Ayu
+Jenis Kelamin   : Perempuan
+Usia            : 34
+----------------
+
+Masukkan menu : 4
+Data diurutkan berdasarkan usia (DSC)
+Kode            : 123
+Nama            : Ayu
+Jenis Kelamin   : Perempuan
+Usia            : 34
+----------------
+Kode            : 764
+Nama            : Jace
+Jenis Kelamin   : Perempuan
+Usia            : 25
+----------------
+Kode            : 654
+Nama            : Johan
+Jenis Kelamin   : Laki-Laki
+Usia            : 20
+----------------
+
+Masukkan menu : 5
+Data diurutkan menggunakan insertion sort
+Kode            : 123
+Nama            : Ayu
+Jenis Kelamin   : Perempuan
+Usia            : 34
+----------------
+Kode            : 764
+Nama            : Jace
+Jenis Kelamin   : Perempuan
+Usia            : 25
+----------------
+Kode            : 654
+Nama            : Johan
+Jenis Kelamin   : Laki-Laki
+Usia            : 20
+----------------
+
+Masukkan menu : 6
+Program telah selesai!
+```
