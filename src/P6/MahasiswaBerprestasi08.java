@@ -1,8 +1,12 @@
 package P6;
 
 public class MahasiswaBerprestasi08 {
-    Mahasiswa08 [] listMhs = new Mahasiswa08[5];
+    Mahasiswa08 [] listMhs;
     int idx;
+
+    MahasiswaBerprestasi08(int n) {
+        listMhs = new Mahasiswa08[n];
+    }
     
     void tambah(Mahasiswa08 m) {
         if (idx < listMhs.length) {
@@ -14,8 +18,12 @@ public class MahasiswaBerprestasi08 {
     }
 
     void tampil() {
-        for (Mahasiswa08 m : listMhs) {
-            m.tampilInformasi();
+        // for (Mahasiswa08 m : listMhs) {
+        //     m.tampilInformasi();
+        //     System.out.println("--------------------");
+        // }
+        for (int i = 0; i < idx; i++) {
+            listMhs[i].tampilInformasi();
             System.out.println("--------------------");
         }
     }

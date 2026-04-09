@@ -124,3 +124,69 @@ IPK     : 3.1
 Kelas   : 2A
 --------------------
 ```
+
+## Pertanyaan Praktikum 2
+
+1. Perhatikan perulangan di dalam bubbleSort() di bawah ini: 
+```
+for (int i = 0; i < listMhs.length - 1; i++) {
+    for (int j = 1; j < listMhs.length - i; j++) {
+```
+    a. Mengapa syarat dari perulangan i adalah i<listMhs.length-1 ? 
+        - Syarat tersebut digunakan untuk menempatkan elemen terkecil ke posisi plaing akhir setiap iterasi
+    b. Mengapa syarat dari perulangan j adalah j<listMhs.length-i ? 
+        - Syarat tersebut digunakan untuk menghindari membandingkan kembali elemen yang sudah berada di posisi yang tepat
+    c. Jika banyak data di dalam listMhs adalah 50, maka berapakali perulangan i akan berlangsung? Dan ada berapa Tahap bubble sort yang ditempuh? 
+        - Perulangan i dan tahap bubble sort dilakukan sebanyak 49 kali
+2. Modifikasi program diatas dimana data mahasiswa bersifat dinamis (input dari keyborad) yang terdiri dari nim, nama, kelas, dan ipk!
+```
+Masukkan jumlah mahasiswa : 3
+
+Nama  : Zidan 
+NIM   : 134
+IPK   : 3.5
+Kelas : 2B
+----------------------
+Nama  : Johan
+NIM   : 135
+IPK   : 3.9
+Kelas : 2B
+----------------------
+Nama  : Mika
+NIM   : 136
+IPK   : 3.2
+Kelas : 2B
+----------------------
+Data mahasiswa sebelum sorting :
+Nama    : Zidan
+NIM     : 134
+IPK     : 3.5
+Kelas   : 2B
+--------------------
+Nama    : Johan
+NIM     : 135
+IPK     : 3.9
+Kelas   : 2B
+--------------------
+Nama    : Mika
+NIM     : 136
+IPK     : 3.2
+Kelas   : 2B
+--------------------
+Data mahasiswa setelah sorting berdasarkan IPK (DESC) :
+Nama    : Johan
+NIM     : 135
+IPK     : 3.9
+Kelas   : 2B
+--------------------
+Nama    : Zidan
+NIM     : 134
+IPK     : 3.5
+Kelas   : 2B
+--------------------
+Nama    : Mika
+NIM     : 136
+IPK     : 3.2
+Kelas   : 2B
+--------------------
+```
