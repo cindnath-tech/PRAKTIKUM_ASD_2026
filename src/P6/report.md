@@ -68,7 +68,7 @@ if (data[j] < data[min]) {
 
 ## Percobaan 2
 
-Hasil dari percobaan praktikum 2 :
+Hasil dari percobaan 2 :
 
 ```
 Data mahasiswa sebelum sorting : 
@@ -193,7 +193,7 @@ Kelas   : 2B
 
 ## Percobaan 3
 
-Hasil dari percobaan praktikum 3 :
+Hasil dari percobaan 3 :
 
 ```
 Masukkan jumlah mahasiswa : 5
@@ -289,3 +289,89 @@ for (int j = i + 1; j < listMhs.length; j++) {
 ```
 Untuk apakah proses tersebut, jelaskan!
 - Proses tersbeut digunakan untuk mencari indeks elemen dengan nilai IPK terkecil lalu akan dilakukan proses swap
+
+## Percobaan 4
+
+Hasil dari percobaan 4 :
+
+```
+Masukkan jumlah mahasiswa : 5
+
+Nama  : Ayu
+NIM   : 111
+IPK   : 3.7
+Kelas : 2C
+----------------------
+Nama  : Dika
+NIM   : 222
+IPK   : 3.0
+Kelas : 2C
+----------------------
+Nama  : Ila
+NIM   : 333
+IPK   : 3.8
+Kelas : 2C
+----------------------
+Nama  : Susi
+NIM   : 444
+IPK   : 3.1
+Kelas : 2C
+----------------------
+Nama  : Yayuk
+NIM   : 555
+IPK   : 3.4
+Kelas : 2C
+----------------------
+Data mahasiswa sebelum sorting :
+Nama    : Ayu
+NIM     : 111
+IPK     : 3.7
+Kelas   : 2C
+--------------------
+Nama    : Dika
+NIM     : 222
+IPK     : 3.0
+Kelas   : 2C
+--------------------
+Nama    : Ila
+NIM     : 333
+IPK     : 3.8
+Kelas   : 2C
+--------------------
+Nama    : Susi
+NIM     : 444
+IPK     : 3.1
+Kelas   : 2C
+--------------------
+Nama    : Yayuk
+NIM     : 555
+IPK     : 3.4
+Kelas   : 2C
+--------------------
+Data yang sudah terurut menggunakan INSERTION SORT (ASC)
+Nama    : Dika
+NIM     : 222
+IPK     : 3.0
+Kelas   : 2C
+--------------------
+Nama    : Susi
+NIM     : 444
+IPK     : 3.1
+Kelas   : 2C
+--------------------
+Nama    : Yayuk
+NIM     : 555
+IPK     : 3.4
+Kelas   : 2C
+--------------------
+Nama    : Ayu
+NIM     : 111
+IPK     : 3.7
+Kelas   : 2C
+--------------------
+Nama    : Ila
+NIM     : 333
+IPK     : 3.8
+Kelas   : 2C
+--------------------
+```
