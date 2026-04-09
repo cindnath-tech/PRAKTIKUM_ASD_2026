@@ -190,3 +190,89 @@ IPK     : 3.2
 Kelas   : 2B
 --------------------
 ```
+
+## Praktikum 3
+
+Hasil dari percobaan praktikum 3 :
+
+```
+Masukkan jumlah mahasiswa : 5
+
+Nama  : Ali
+NIM   : 123
+IPK   : 3.9
+Kelas : 2B
+----------------------
+Nama  : Ila
+NIM   : 124
+IPK   : 3.1
+Kelas : 2B
+----------------------
+Nama  : Agus
+NIM   : 125
+IPK   : 3.6
+Kelas : 2B
+----------------------
+Nama  : Tika
+NIM   : 126
+IPK   : 3.3
+Kelas : 2B
+----------------------
+Nama  : Udin
+NIM   : 127
+IPK   : 3.2
+Kelas : 2B
+----------------------
+Data mahasiswa sebelum sorting :
+Nama    : Ali
+NIM     : 123
+IPK     : 3.9
+Kelas   : 2B
+--------------------
+Nama    : Ila
+NIM     : 124
+IPK     : 3.1
+Kelas   : 2B
+--------------------
+Nama    : Agus
+NIM     : 125
+IPK     : 3.6
+Kelas   : 2B
+--------------------
+Nama    : Tika
+NIM     : 126
+IPK     : 3.3
+Kelas   : 2B
+--------------------
+Nama    : Udin
+NIM     : 127
+IPK     : 3.2
+Kelas   : 2B
+--------------------
+Data yang sudah terturut menggunakan SELECTION SORT (ASC)
+Nama    : Ila
+NIM     : 124
+IPK     : 3.1
+Kelas   : 2B
+--------------------
+Nama    : Udin
+NIM     : 127
+IPK     : 3.2
+Kelas   : 2B
+--------------------
+Nama    : Tika
+NIM     : 126
+IPK     : 3.3
+Kelas   : 2B
+--------------------
+Nama    : Agus
+NIM     : 125
+IPK     : 3.6
+Kelas   : 2B
+--------------------
+Nama    : Ali
+NIM     : 123
+IPK     : 3.9
+Kelas   : 2B
+--------------------
+```
