@@ -28,6 +28,7 @@ public class MahasiswaDemo08 {
             System.out.println("----------------------");
 
             Mahasiswa08 m = new Mahasiswa08(nim, nama, kelas, ip);
+            list.tambah(m);
         }
 
         list.tampil();
@@ -38,25 +39,33 @@ public class MahasiswaDemo08 {
         System.out.print("IPK : ");
         String stCari = cindy.nextLine();
         double cari = Double.parseDouble(stCari);
+        System.out.println("-----------------------");
+        System.out.println("Menggunakan binary search");
+        System.out.println("-----------------------");
+        double posisi2 = list.findBinarySearch(cari, 0, jumMhs - 1);
+        int pss2 = (int)posisi2;
+        list.tampilPosisi(cari, pss2);
+        list.tampilDataSeacrh(cari, pss2);
 
+        System.out.println("----------------------------");
         System.out.println("Menggunakan sequential searching");
         double posisi = list.sequentialSearching(cari);
         int pss = (int)posisi;
         list.tampilPosisi(cari, pss);
         list.tampilDataSeacrh(cari, pss);
 
-        System.out.println("Data mahasiswa sebelum sorting : ");
+        System.out.println("\nData mahasiswa sebelum sorting : ");
         list.tampil();
 
-        System.out.println("Data mahasiswa setelah sorting berdasarkan IPK (DESC) : ");
+        System.out.println("\nData mahasiswa setelah sorting berdasarkan IPK (DESC) : ");
         list.bubbleSort();
         list.tampil();
 
-        System.out.println("Data yang sudah terturut menggunakan SELECTION SORT (ASC)");
+        System.out.println("\nData yang sudah terturut menggunakan SELECTION SORT (ASC)");
         list.selectionSort();
         list.tampil();
 
-        System.out.println("Data yang sudah terurut menggunakan INSERTION SORT");
+        System.out.println("\nData yang sudah terurut menggunakan INSERTION SORT");
         list.insertionSort();
         list.tampil();
     }

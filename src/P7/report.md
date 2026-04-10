@@ -97,3 +97,81 @@ if (listMhs[j].ipk == cari) {
     - karena pada kode program menggunakan break maka data yang disimpan adalah data yang pertama kali cocok lalu program tidak akan mengecek data yang lainnya, namun jika tidak menggunakan break maka program akan menyimpan data terkahir yang cocok dengan kondisi yang ditentukan
 5. Berkaitan dengan pertanyaan nomor 2 di atas, apa yang terjadi jika perintah break dihapus dari kode di atas?
     - jika break di hapus maka program akan terus melakukan pengecekan data dan setiap bertemu dengan data yang sama, variabel posisi akan diupdate
+
+## Percobaan 2
+
+Hasil dari percobaan 2 :
+
+```
+Masukkan jumlah mahasiswa : 5
+
+Masukkan Data Mahasiswa ke-1
+Nama  : Adi
+NIM   : 111
+IPK   : 3.1
+Kelas : 2
+----------------------
+Masukkan Data Mahasiswa ke-2
+Nama  : Ila
+NIM   : 222
+IPK   : 3.2
+Kelas : 2
+----------------------
+Masukkan Data Mahasiswa ke-3
+Nama  : Lia
+NIM   : 333
+IPK   : 3.3
+Kelas : 2
+----------------------
+Masukkan Data Mahasiswa ke-4
+Nama  : Susi
+NIM   : 444
+IPK   : 3.5
+Kelas : 2
+----------------------
+Masukkan Data Mahasiswa ke-5
+Nama  : Anita
+NIM   : 555
+IPK   : 3.7
+Kelas : 2
+----------------------
+Nama    : Adi
+NIM     : 111
+IPK     : 3.1
+Kelas   : 2
+--------------------
+Nama    : Ila
+NIM     : 222
+IPK     : 3.2
+Kelas   : 2
+--------------------
+Nama    : Lia
+NIM     : 333
+IPK     : 3.3
+Kelas   : 2
+--------------------
+Nama    : Susi
+NIM     : 444
+IPK     : 3.5
+Kelas   : 2
+--------------------
+Nama    : Anita
+NIM     : 555
+IPK     : 3.7
+Kelas   : 2
+--------------------
+------------------------------------
+Pencarian data
+------------------------------------
+Masukkan ipk mahasiswa yang dicari :
+IPK : 3.7
+-----------------------
+Menggunakan binary search
+-----------------------
+Data mahasiswa dengan IPK : 3.7 ditemukan pada indeks 4
+NIM      : 555
+Nama     : Anita
+kelas    : 2
+IPK      : 3.7
+----------------------------
+```
