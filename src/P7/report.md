@@ -79,3 +79,21 @@ Nama     : lia
 kelas    : 2
 IPK      : 3.5
 ```
+
+### Pertanyaan Percobaan 1
+1. Jelaskan perbedaan metod tampilDataSearch dan tampilPosisi pada class MahasiswaBerprestasi!
+    - Method tampilDataSearch digunakan untuk menampilkan data mahasiswa setelah pencarian nim ditemukan sedangkan method tampilPosisi digunakan untuk menampilkan index data dalam array 
+2. Jelaskan fungsi break pada kode program di bawah ini!
+```
+if (listMhs[j].ipk == cari) {
+    posisi = j;
+    break;
+}
+```
+    - break dalam kode tersebut digunakan untuk memberhentikan perulangan ketika data sudah ditemukan
+3. Apa fungsi variabel pos atau indeks hasil pencarian dalam program sequential search? 
+    - variabel pos digunakan untuk menyimpan index data yang telah ditemukan karena jika tidak menggunakan variabel pos maka program tidak dapat menyimpan index data
+4. Jika terdapat lebih dari satu data dengan nilai yang sama, hasil pencarian sequential search yang dibuat di atas akan menampilkan data ke berapa? Jelaskan. 
+    - karena pada kode program menggunakan break maka data yang disimpan adalah data yang pertama kali cocok lalu program tidak akan mengecek data yang lainnya, namun jika tidak menggunakan break maka program akan menyimpan data terkahir yang cocok dengan kondisi yang ditentukan
+5. Berkaitan dengan pertanyaan nomor 2 di atas, apa yang terjadi jika perintah break dihapus dari kode di atas?
+    - jika break di hapus maka program akan terus melakukan pengecekan data dan setiap bertemu dengan data yang sama, variabel posisi akan diupdate
