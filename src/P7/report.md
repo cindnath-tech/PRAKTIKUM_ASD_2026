@@ -175,3 +175,34 @@ kelas    : 2
 IPK      : 3.7
 ----------------------------
 ```
+
+## Pertanyaan Percobaan 2
+1. Tunjukkan pada kode program yang mana proses divide dijalankan! 
+```
+mid = (left + right) / 2;
+```
+2. Tunjukkan pada kode program yang mana proses conquer dijalankan! 
+```
+return findBinarySearch(cari, left, mid - 1); dan
+return findBinarySearch(cari, mid + 1, right);
+```
+3. Apa fungsi left, right, dan mid? 
+    - left menunjukkan batas kiri (indeks paling kiri) dalam array, right menunjukkan batas kanan (indeks paling kanan) dalam array, dan mid menunjukkan indeks tengah dalam array
+4. Jika data IPK yang dimasukkan tidak urut. Apakah program masih dapat berjalan? Mengapa demikian? 
+    - program tetap jalan namun outputnya akan hasil karena program tidak dapat memastikan mana yang lebih kecil atau lebih besar
+5. Jika IPK yang dimasukkan dari IPK terbesar ke terkecil (misal: 3.8, 3.7, 3.5, 3.4, 3.2) dan elemen yang dicari adalah 3.2. Bagaimana hasil dari binary search? Apakah sesuai? Jika tidak sesuai maka ubahlah kode program binary seach agar hasilnya sesuai 
+```
+} else if (listMhs[mid].ipk < cari) {
+```
+    - mengganti simbol > menjadi < karena pencarian dilakukan secara ascending
+6. Jelaskan bagaimana binary search menentukan bahwa data yang dicari tidak ditemukan di dalam array. 
+    - pada program terdapat kondisi jika right lebih besar sama dengan left namun jika right lebih kecil dari left maka data tidak ada dan semua kemungkinan telah dicek
+7. Modifikasi program di atas yang mana jumlah mahasiswa yang diinputkan sesuai dengan masukan dari keyboard.
+```
+System.out.print("Masukkan jumlah mahasiswa : ");
+    int n = cindy.nextInt();
+    cindy.nextLine();
+    System.out.println();
+
+    MahasiswaBerprestasi08 list = new MahasiswaBerprestasi08(n);
+```

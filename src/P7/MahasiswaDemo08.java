@@ -10,11 +10,9 @@ public class MahasiswaDemo08 {
         cindy.nextLine();
         System.out.println();
 
-        int jumMhs = 5;
-
         MahasiswaBerprestasi08 list = new MahasiswaBerprestasi08(n);
 
-        for (int i = 0; i < jumMhs; i++) {
+        for (int i = 0; i < n; i++) {
             System.out.println("Masukkan Data Mahasiswa ke-" +(i + 1));
             System.out.print("Nama  : ");
             String nama = cindy.nextLine();
@@ -42,7 +40,7 @@ public class MahasiswaDemo08 {
         System.out.println("-----------------------");
         System.out.println("Menggunakan binary search");
         System.out.println("-----------------------");
-        double posisi2 = list.findBinarySearch(cari, 0, jumMhs - 1);
+        double posisi2 = list.findBinarySearch(cari, 0, n - 1);
         int pss2 = (int)posisi2;
         list.tampilPosisi(cari, pss2);
         list.tampilDataSeacrh(cari, pss2);
