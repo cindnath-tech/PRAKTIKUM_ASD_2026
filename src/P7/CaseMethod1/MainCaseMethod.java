@@ -49,8 +49,26 @@ public class MainCaseMethod {
                     System.out.println();
                 }
             } else if (menu == 3) {
+                System.out.print("Masukkan NIM: ");
+                String cari = cindy.nextLine();
+                boolean ketemu = false;
+                boolean isCanceled = false;
+                for (int i = 0; i < listPeminjaman.length; i++) {
+                    if (listPeminjaman[i].mhs.nim.equals(cari)) {
+                        ketemu = true;
+                        isCanceled = ketemu;
+                    }
+                } // fungsi ini digunakan untuk mencari nim yang datanya perlu dihapus
+                // Jawaban dari Sesi 4 yang B
+
+                if (!ketemu) {
+                    System.out.println("Data tidak ditemukan");
+                }
+
                 for (Peminjaman pmjn : listPeminjaman) {
-                    pmjn.tampilPeminjaman();
+                    if (isCanceled = true) { // digunakan untuk menampilkan data yang isCancelednya false
+                        pmjn.tampilPeminjaman();
+                    }
                     System.out.println();
                 }
             } else if (menu == 4) {

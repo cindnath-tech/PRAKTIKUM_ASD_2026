@@ -7,6 +7,7 @@ public class Peminjaman {
     int batasPinjam = 5;
     int terlambat;
     int denda;
+    boolean isCanceled; // atribut yang akan digunakan untuk menandai data yang perlu dihapus 
 
     Peminjaman(Mahasiswa mhs, Buku buku, int lamaPinjam) {
         this.mhs = mhs;
@@ -21,6 +22,10 @@ public class Peminjaman {
             terlambat = 0;
         }
         denda = terlambat * 2000;
+
+        if (denda > 20000) {  // Pada program ini akan dilakukan pengecekan apakah denda melebihi 20000, jika iya maka program akan set denda otomatis 20000
+            denda = 20000; // Jawaban dari Sesi 4 yang A
+        }
     }
 
     void tampilPeminjaman() {
