@@ -211,3 +211,59 @@ Menu
 Pilih : 6
 Jumlah tugas yang sudah dikumpulkan : 3
 ```
+
+## Percobaan 2
+Hasil dari percobaan 2 :
+```
+Menu
+1. Mengumpulkan tugas
+2. Menilai Tugas
+3. Melihat Tugas Teratas
+4. Melihat Tugas Terbawah
+5. Melihat Daftar Tugas
+6. Melihat Jumlah Tugas
+Pilih : 1
+Nama : Dila 
+NIM : 1001
+Kelas : 1A
+Tugas Dila  berhasil dikumpulkan
+
+Menu
+1. Mengumpulkan tugas
+2. Menilai Tugas
+3. Melihat Tugas Teratas
+4. Melihat Tugas Terbawah
+5. Melihat Daftar Tugas
+6. Melihat Jumlah Tugas
+Pilih : 1
+Nama : Erik
+NIM : 1002
+Kelas : 1B
+Tugas Erik berhasil dikumpulkan
+
+Menu
+1. Mengumpulkan tugas
+2. Menilai Tugas
+3. Melihat Tugas Teratas
+4. Melihat Tugas Terbawah
+5. Melihat Daftar Tugas
+6. Melihat Jumlah Tugas
+Pilih : 1
+Nama : Tika
+NIM : 1003
+Kelas : 1C
+Tugas Tika berhasil dikumpulkan
+
+Menu
+1. Mengumpulkan tugas
+2. Menilai Tugas
+3. Melihat Tugas Teratas
+4. Melihat Tugas Terbawah
+5. Melihat Daftar Tugas
+6. Melihat Jumlah Tugas
+Pilih : 2
+Menilai tugas dari Tika
+Masukkan nilai (0-100) : 87
+Nilai Tugas Tika adalah 87
+Nilai Biner Tugas : 1010111
+```
