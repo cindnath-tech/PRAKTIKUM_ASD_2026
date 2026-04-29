@@ -86,3 +86,128 @@ Nama    NIM     Kelas
 Dila    1001    1A
 Erik    1002    1B
 ```
+
+### Pertanyaan Percobaan 1
+1. Lakukan perbaikan pada kode program, sehingga keluaran yang dihasilkan sama dengan verifikasi hasil percobaan! Bagian mana yang perlu diperbaiki? 
+    - Mengubah kondisi perulangan pada method print menjadi kode dibawah ini:
+```
+for (int i = top; i >= 0; i--) {
+```
+2. Berapa banyak data tugas mahasiswa yang dapat ditampung di dalam Stack? Tunjukkan potongan kode programnya! 
+    - Data yang dapat ditampung sebanyak 5
+```
+StackTugasMahasiswa08 stack = new StackTugasMahasiswa08(5);
+```
+3. Mengapa perlu pengecekan kondisi !isFull() pada method push? Kalau kondisi if-else tersebut dihapus, apa dampaknya? 
+    - Pengecekan !isFull digunakan untuk memastikan stack masih memiliki ruang kosong sebelum data baru ditambahkan karena stack memiliki kapasitas yang terbatas (pada program kapasitas stack hanya ada 5), ketika if-else dihapus maka akan terjadi ArrayIndexOutOfBoundsException (index array sudah melebihi kapasitas)
+4. Modifikasi kode program pada class MahasiswaDemo dan StackTugasMahasiswa sehingga pengguna juga dapat melihat mahasiswa yang pertama kali mengumpulkan tugas melalui operasi lihat tugas terbawah! 
+```
+Menu
+1. Mengumpulkan tugas
+2. Menilai Tugas
+3. Melihat Tugas Teratas
+4. Melihat Tugas Terbawah
+5. Melihat Daftar Tugas
+Pilih : 1
+Nama : Dila
+NIM : 1001
+Kelas : 1A
+Tugas Dila berhasil dikumpulkan
+
+Menu
+1. Mengumpulkan tugas
+2. Menilai Tugas
+3. Melihat Tugas Teratas
+4. Melihat Tugas Terbawah
+5. Melihat Daftar Tugas
+Pilih : 1
+Nama : Erik
+NIM : 1002
+Kelas : 1B
+Tugas Erik berhasil dikumpulkan
+
+Menu
+1. Mengumpulkan tugas
+2. Menilai Tugas
+3. Melihat Tugas Teratas
+4. Melihat Tugas Terbawah
+5. Melihat Daftar Tugas
+Pilih : 1
+Nama : Tika
+NIM : 1003
+Kelas : 1C
+Tugas Tika berhasil dikumpulkan
+
+Menu
+1. Mengumpulkan tugas
+2. Menilai Tugas
+3. Melihat Tugas Teratas
+4. Melihat Tugas Terbawah
+5. Melihat Daftar Tugas
+Pilih : 5
+Daftar semua tugas
+Nama    NIM     Kelas
+Tika    1003    1C
+Erik    1002    1B
+Dila    1001    1A
+
+Menu
+1. Mengumpulkan tugas
+2. Menilai Tugas
+3. Melihat Tugas Teratas
+4. Melihat Tugas Terbawah
+5. Melihat Daftar Tugas
+Pilih : 4
+Tugas pertama dikumpulkan oleh Dila
+```
+5. Tambahkan method untuk dapat menghitung berapa banyak tugas yang sudah dikumpulkan saat ini, serta tambahkan operasi menunya! 
+```
+Menu
+1. Mengumpulkan tugas
+2. Menilai Tugas
+3. Melihat Tugas Teratas
+4. Melihat Tugas Terbawah
+5. Melihat Daftar Tugas
+6. Melihat Jumlah Tugas
+Pilih : 1
+Nama : Dila
+NIM : 1001
+Kelas : 1A
+Tugas Dila berhasil dikumpulkan
+
+Menu
+1. Mengumpulkan tugas
+2. Menilai Tugas
+3. Melihat Tugas Teratas
+4. Melihat Tugas Terbawah
+5. Melihat Daftar Tugas
+6. Melihat Jumlah Tugas
+Pilih : 1
+Nama : Johan
+NIM : 1002
+Kelas : 1B
+Tugas Johan berhasil dikumpulkan
+
+Menu
+1. Mengumpulkan tugas
+2. Menilai Tugas
+3. Melihat Tugas Teratas
+4. Melihat Tugas Terbawah
+5. Melihat Daftar Tugas
+6. Melihat Jumlah Tugas
+Pilih : 1   
+Nama : Mile
+NIM : 1003
+Kelas : 1C
+Tugas Mile berhasil dikumpulkan
+
+Menu
+1. Mengumpulkan tugas
+2. Menilai Tugas
+3. Melihat Tugas Teratas
+4. Melihat Tugas Terbawah
+5. Melihat Daftar Tugas
+6. Melihat Jumlah Tugas
+Pilih : 6
+Jumlah tugas yang sudah dikumpulkan : 3
+```
