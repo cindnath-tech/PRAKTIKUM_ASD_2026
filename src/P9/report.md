@@ -300,3 +300,84 @@ Masukkan nilai (0-100) : 87
 Nilai Tugas Tika adalah 87
 Nilai Biner Tugas : 1010111
 ```
+
+## Latihan Praktikum
+Hasil dari latihan praktikum : 
+```
+Menu
+1. Terima Surat Izin
+2. Proses Surat Izin
+3. Lihat Surat Izin Terkahir
+4. Cari Surat (berdasarkan nama)
+Pilih : 1
+ID Surat : 1345
+Nama : Johan
+Kelas : 1B
+Jenis Izin (S/I) : S
+Durasi Izin : 2
+Surat izin berhasil diinput
+
+Menu
+1. Terima Surat Izin
+2. Proses Surat Izin
+3. Lihat Surat Izin Terkahir
+4. Cari Surat (berdasarkan nama)
+Pilih : 1
+ID Surat : 1653
+Nama : Milen
+Kelas : 1D
+Jenis Izin (S/I) : I
+Durasi Izin : 2
+Surat izin berhasil diinput
+
+Menu
+1. Terima Surat Izin
+2. Proses Surat Izin
+3. Lihat Surat Izin Terkahir
+4. Cari Surat (berdasarkan nama)
+Pilih : 1
+ID Surat : 1763
+Nama : Dika
+Kelas : 1G
+Jenis Izin (S/I) : I
+Durasi Izin : 5
+Surat izin berhasil diinput
+
+Menu
+1. Terima Surat Izin
+2. Proses Surat Izin
+3. Lihat Surat Izin Terkahir
+4. Cari Surat (berdasarkan nama)
+Pilih : 2
+Proses Verifikasi Surat Izin : 
+ID Surat        Nama    Kelas   Jenis Izin      Durasi Izin
+1345            Johan   1B      S               2
+1653            Milen   1D      I               2
+1763            Dika    1G      I               5
+
+
+Menu
+1. Terima Surat Izin
+2. Proses Surat Izin
+3. Lihat Surat Izin Terkahir
+4. Cari Surat (berdasarkan nama)
+Pilih : 3
+Surat izin terakhir masuk dari Dika
+
+Menu
+1. Terima Surat Izin
+2. Proses Surat Izin
+3. Lihat Surat Izin Terkahir
+4. Cari Surat (berdasarkan nama)
+Pilih : 4
+Masukkan nama mahasiswa : Johan
+Surat izin ditemukan
+
+Menu
+1. Terima Surat Izin
+2. Proses Surat Izin
+3. Lihat Surat Izin Terkahir
+4. Cari Surat (berdasarkan nama)
+Pilih : 5
+Program Anda Telah Selesai
+```
