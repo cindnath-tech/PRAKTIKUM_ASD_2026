@@ -267,3 +267,36 @@ Masukkan nilai (0-100) : 87
 Nilai Tugas Tika adalah 87
 Nilai Biner Tugas : 1010111
 ```
+
+### Pertanyaan Percobaan 2
+1. Jelaskan alur kerja dari method konversiDesimalKeBiner! 
+    - Menginputkan nilai terlebih dahulu lalu yang pertama program akan membuat stack untuk menyimpan hasil sisa pembagian, yang kedua akan dilakukan pengecekan kondisi apakah nilai desimal tersebut lebih besar dari 0, jika iya maka nilai akan di modulus (%) dengan 2. Hasil sisa modulus akan disimpan di stack menggunakan method push, kemudian nilai akan dibagi dengan 2. Setelah seluruh hasil sisa modulus tersimpan, program akan membuat varibel String dengan nama biner. Kemudian isi stack akan diambil satu per satu menggunakan method pop sampai kosong, nilai yang terkahir masuk akan keluar lebih dulu sehingga urutan digit benar. Setelah itu nilai yang diambil akan digabungkan kembali ke dalam String biner dan hasilnya akan dikembalikan dalam bentuk bilangan biner.
+2. Pada method konversiDesimalKeBiner, ubah kondisi perulangan menjadi while (kode != 0), bagaimana hasilnya? Jelaskan alasannya!
+    - Mengubah kondisi menjadi nilai != 0 tidak akan mengubah hasil konversi selama varibel nilai masih berisi dengan nilai/angka. Perulangan akan tetap berhenti ketika angka sudah menjadi 0, namun jika varibel nilai tidak di deklarasi maka program akan mengalami error.
+```
+Menu
+1. Mengumpulkan tugas
+2. Menilai Tugas
+3. Melihat Tugas Teratas
+4. Melihat Tugas Terbawah
+5. Melihat Daftar Tugas
+6. Melihat Jumlah Tugas
+Pilih : 1
+Nama : Tika
+NIM : 1003
+Kelas : 1C
+Tugas Tika berhasil dikumpulkan
+
+Menu
+1. Mengumpulkan tugas
+2. Menilai Tugas
+3. Melihat Tugas Teratas
+4. Melihat Tugas Terbawah
+5. Melihat Daftar Tugas
+6. Melihat Jumlah Tugas
+Pilih : 2
+Menilai tugas dari Tika
+Masukkan nilai (0-100) : 87
+Nilai Tugas Tika adalah 87
+Nilai Biner Tugas : 1010111
+```
