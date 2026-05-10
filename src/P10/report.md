@@ -238,6 +238,9 @@ Terimakasih
 ```
 
 ## Tugas
+Gambar Diagram Class AntrianKRS
+![Antrian KRS](image/antrianKRS.png)
+
 Hasil run dari tugas :
 ```
 === Antrian KRS ===
