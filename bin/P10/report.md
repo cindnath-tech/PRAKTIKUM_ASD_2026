@@ -236,3 +236,215 @@ Mahasiswa paling belakang : NIM - NAMA - PRODI - KELAS
 Pilih menu : 0
 Terimakasih
 ```
+
+## Tugas
+Hasil run dari tugas :
+```
+=== Antrian KRS ===
+1. Tambah Mahasiswa ke Antrian
+2. Proses KRS
+3. Lihat Semua Antrian
+4. Lihat 2 Antrian Terdepan
+5. Lihat Antrian Paling Akhir
+6. Jumlah Mahasiswa dalam Antrian
+7. Jumlah yang Sudah Proses KRS
+8. Jumlah yang Belum Proses KRS
+9. Kosongkan Antrian
+0. Keluar
+Pilih menu : 1
+NIM   : 123
+Nama  : Aldi
+Prodi : TI
+Kelas : 1A
+Aldi berhasil masuk ke antrian.
+
+=== Antrian KRS ===
+1. Tambah Mahasiswa ke Antrian
+2. Proses KRS
+3. Lihat Semua Antrian
+4. Lihat 2 Antrian Terdepan
+5. Lihat Antrian Paling Akhir
+6. Jumlah Mahasiswa dalam Antrian
+7. Jumlah yang Sudah Proses KRS
+8. Jumlah yang Belum Proses KRS
+9. Kosongkan Antrian
+0. Keluar
+Pilih menu : 1
+NIM   : 124
+Nama  : Bobi
+Prodi : TI
+Kelas : 1G
+Bobi berhasil masuk ke antrian.
+
+=== Antrian KRS ===
+1. Tambah Mahasiswa ke Antrian
+2. Proses KRS
+3. Lihat Semua Antrian
+4. Lihat 2 Antrian Terdepan
+5. Lihat Antrian Paling Akhir
+6. Jumlah Mahasiswa dalam Antrian
+7. Jumlah yang Sudah Proses KRS
+8. Jumlah yang Belum Proses KRS
+9. Kosongkan Antrian
+0. Keluar
+Pilih menu : 1
+NIM   : 125
+Nama  : Milen
+Prodi : TI
+Kelas : 1H
+Milen berhasil masuk ke antrian.
+
+=== Antrian KRS ===
+1. Tambah Mahasiswa ke Antrian
+2. Proses KRS
+3. Lihat Semua Antrian
+4. Lihat 2 Antrian Terdepan
+5. Lihat Antrian Paling Akhir
+6. Jumlah Mahasiswa dalam Antrian
+7. Jumlah yang Sudah Proses KRS
+8. Jumlah yang Belum Proses KRS
+9. Kosongkan Antrian
+0. Keluar
+Pilih menu : 1
+NIM   : 126  
+Nama  : Johan
+Prodi : TI
+Kelas : 1F
+Johan berhasil masuk ke antrian.
+
+=== Antrian KRS ===
+1. Tambah Mahasiswa ke Antrian
+2. Proses KRS
+3. Lihat Semua Antrian
+4. Lihat 2 Antrian Terdepan
+5. Lihat Antrian Paling Akhir
+6. Jumlah Mahasiswa dalam Antrian
+7. Jumlah yang Sudah Proses KRS
+8. Jumlah yang Belum Proses KRS
+9. Kosongkan Antrian
+0. Keluar
+Pilih menu : 3
+Daftar Mahasiswa dalam Antrian : 
+NIM - NAMA - PRODI - KELAS
+1. 123  Aldi    TI      1A
+2. 124  Bobi    TI      1G
+3. 125  Milen   TI      1H
+4. 126  Johan   TI      1F
+
+=== Antrian KRS ===
+1. Tambah Mahasiswa ke Antrian
+2. Proses KRS
+3. Lihat Semua Antrian
+4. Lihat 2 Antrian Terdepan
+5. Lihat Antrian Paling Akhir
+6. Jumlah Mahasiswa dalam Antrian
+7. Jumlah yang Sudah Proses KRS
+8. Jumlah yang Belum Proses KRS
+9. Kosongkan Antrian
+0. Keluar
+Pilih menu : 2
+Memproses 2 mahasiswa
+123     Aldi    TI      1A
+124     Bobi    TI      1G
+
+=== Antrian KRS ===
+1. Tambah Mahasiswa ke Antrian
+2. Proses KRS
+3. Lihat Semua Antrian
+4. Lihat 2 Antrian Terdepan
+5. Lihat Antrian Paling Akhir
+6. Jumlah Mahasiswa dalam Antrian
+7. Jumlah yang Sudah Proses KRS
+8. Jumlah yang Belum Proses KRS
+9. Kosongkan Antrian
+0. Keluar
+Pilih menu : 4
+Antrian Terdepan : 
+125     Milen   TI      1H
+126     Johan   TI      1F
+
+=== Antrian KRS ===
+1. Tambah Mahasiswa ke Antrian
+2. Proses KRS
+3. Lihat Semua Antrian
+4. Lihat 2 Antrian Terdepan
+5. Lihat Antrian Paling Akhir
+6. Jumlah Mahasiswa dalam Antrian
+7. Jumlah yang Sudah Proses KRS
+8. Jumlah yang Belum Proses KRS
+9. Kosongkan Antrian
+0. Keluar
+Pilih menu : 5
+Antrian Paling Akhir : 
+126     Johan   TI      1F
+
+=== Antrian KRS ===
+1. Tambah Mahasiswa ke Antrian
+2. Proses KRS
+3. Lihat Semua Antrian
+4. Lihat 2 Antrian Terdepan
+5. Lihat Antrian Paling Akhir
+6. Jumlah Mahasiswa dalam Antrian
+7. Jumlah yang Sudah Proses KRS
+8. Jumlah yang Belum Proses KRS
+9. Kosongkan Antrian
+0. Keluar
+Pilih menu : 6
+Jumlah Mahasiswa dalam Antrian : 2
+
+=== Antrian KRS ===
+1. Tambah Mahasiswa ke Antrian
+2. Proses KRS
+3. Lihat Semua Antrian
+4. Lihat 2 Antrian Terdepan
+5. Lihat Antrian Paling Akhir
+6. Jumlah Mahasiswa dalam Antrian
+7. Jumlah yang Sudah Proses KRS
+8. Jumlah yang Belum Proses KRS
+9. Kosongkan Antrian
+0. Keluar
+Pilih menu : 7
+Jumlah yang sudah proses KRS : 2
+
+=== Antrian KRS ===
+1. Tambah Mahasiswa ke Antrian
+2. Proses KRS
+3. Lihat Semua Antrian
+4. Lihat 2 Antrian Terdepan
+5. Lihat Antrian Paling Akhir
+6. Jumlah Mahasiswa dalam Antrian
+7. Jumlah yang Sudah Proses KRS
+8. Jumlah yang Belum Proses KRS
+9. Kosongkan Antrian
+0. Keluar
+Pilih menu : 8
+Jumlah yang belum proses KRS : 28
+
+=== Antrian KRS ===
+1. Tambah Mahasiswa ke Antrian
+2. Proses KRS
+3. Lihat Semua Antrian
+4. Lihat 2 Antrian Terdepan
+5. Lihat Antrian Paling Akhir
+6. Jumlah Mahasiswa dalam Antrian
+7. Jumlah yang Sudah Proses KRS
+8. Jumlah yang Belum Proses KRS
+9. Kosongkan Antrian
+0. Keluar
+Pilih menu : 9
+Antrian berhasil dikosongkan
+
+=== Antrian KRS ===
+1. Tambah Mahasiswa ke Antrian
+2. Proses KRS
+3. Lihat Semua Antrian
+4. Lihat 2 Antrian Terdepan
+5. Lihat Antrian Paling Akhir
+6. Jumlah Mahasiswa dalam Antrian
+7. Jumlah yang Sudah Proses KRS
+8. Jumlah yang Belum Proses KRS
+9. Kosongkan Antrian
+0. Keluar
+Pilih menu : 0
+Terima kasih
+```
