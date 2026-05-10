@@ -166,3 +166,73 @@ Jumlah dalam antrian : 1
 Pilih menu : 0
 Terimakasih
 ```
+
+### Pertanyaan Percobaan 2
+Kode untuk method lihatAKhir :
+```
+public void lihatAkhir() {
+    if (isEmpty()) {
+        System.out.println("Antrian kosong.");
+    } else {
+        System.out.print("Mahasiswa paling belakang : ");
+        System.out.println("NIM - NAMA - PRODI - KELAS");
+        data[rear].tampilkanData();
+    }
+}
+```
+
+Hasil run :
+```
+=== Menu Antrian Layanan Akademik ===
+1. Tambah Mahasiswa ke Antrian
+2. Layani Mahasiswa
+3. Lihat Mahasiswa Terdepan
+4. Lihat Semua Antrian
+5. Jumlah Mahasiswa dalam Antrian
+6. Cek Antrian Paling Belakang
+0. Keluar
+Pilih menu : 1
+NIM   : 123
+Nama  : Aldi
+Prodi : TI
+Kelas : 1A
+Aldi berhasil masuk ke antrian.
+
+=== Menu Antrian Layanan Akademik ===
+1. Tambah Mahasiswa ke Antrian
+2. Layani Mahasiswa
+3. Lihat Mahasiswa Terdepan
+4. Lihat Semua Antrian
+5. Jumlah Mahasiswa dalam Antrian
+6. Cek Antrian Paling Belakang
+0. Keluar
+Pilih menu : 1
+NIM   : 124
+Nama  : Bobi
+Prodi : TI
+Kelas : 1G
+Bobi berhasil masuk ke antrian.
+
+=== Menu Antrian Layanan Akademik ===
+1. Tambah Mahasiswa ke Antrian
+2. Layani Mahasiswa
+3. Lihat Mahasiswa Terdepan
+4. Lihat Semua Antrian
+5. Jumlah Mahasiswa dalam Antrian
+6. Cek Antrian Paling Belakang
+0. Keluar
+Pilih menu : 6
+Mahasiswa paling belakang : NIM - NAMA - PRODI - KELAS
+124 - Bobi - TI - 1G
+
+=== Menu Antrian Layanan Akademik ===
+1. Tambah Mahasiswa ke Antrian
+2. Layani Mahasiswa
+3. Lihat Mahasiswa Terdepan
+4. Lihat Semua Antrian
+5. Jumlah Mahasiswa dalam Antrian
+6. Cek Antrian Paling Belakang
+0. Keluar
+Pilih menu : 0
+Terimakasih
+```
