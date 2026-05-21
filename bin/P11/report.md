@@ -55,3 +55,24 @@ Scanner cindy = new Scanner(System.in);
             sll.print();
         }
 ```
+
+## Praktikum 2
+Hasil run dari praktikum 2 :
+```
+Isi Linked List : 
+Dirga   21212203        4D      3.6
+Cintia  22212202        3C      3.5
+Bimon   23212201        2B      3.8
+Alvaro  24212200        1A      4.0
+
+Data index 1 : 
+Cintia  22212202        3C      3.5
+Data mahasiswa an Bimon berada pada index : 2
+
+Isi Linked List : 
+Cintia  22212202        3C      3.5
+Bimon   23212201        2B      3.8
+
+Isi Linked List : 
+Bimon   23212201        2B      3.8
+```

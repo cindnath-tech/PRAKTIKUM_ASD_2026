@@ -23,9 +23,21 @@ public class SLIMain08 {
             cindy.nextLine();
 
             Mahasiswa08 mhs = new Mahasiswa08(nim, nama, kelas, ipk);
-            sll.addLast(mhs);
+            sll.addFirst(mhs);
             sll.print();
         }
+
+        System.out.println("Data index 1 : ");
+        sll.getData(1);
+
+        System.out.println("Data mahasiswa an Bimon berada pada index : " +sll.indexOf("bimon"));
+        System.out.println();
+
+        sll.removeFirst();
+        sll.removeLast();
+        sll.print();
+        sll.removeAt(0);
+        sll.print();
         // Mahasiswa08 mhs1 = new Mahasiswa08("24212200", "Alvaro", "1A", 4.0);
         // Mahasiswa08 mhs2 = new Mahasiswa08("23212201", "Bimon", "2B", 3.8);
         // Mahasiswa08 mhs3 = new Mahasiswa08("22212202", "Cintia", "3C", 3.5);
