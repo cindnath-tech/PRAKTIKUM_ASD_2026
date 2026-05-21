@@ -24,3 +24,34 @@ Bimon   23212201        2B      3.8
 Cintia  22212202        3C      3.5
 Alvaro  24212200        1A      4.0
 ```
+
+### Pertanyaan Praktikum 1
+1. Mengapa hasil compile kode program di baris pertama menghasilkan “Linked List Kosong”? 
+    - karena saat program pertama kali dijalankan linked list belum terisi node 
+2. Jelaskan kegunaan variable temp secara umum pada setiap method! 
+    - variabel temp digunakan sebagai variabel sementara untuk membantu proses node pada linked list
+3. Lakukan modifikasi agar data dapat ditambahkan dari keyboard!
+```
+Scanner cindy = new Scanner(System.in);
+        System.out.print("Masukkan jumlah data : ");
+        int jml = cindy.nextInt();
+        cindy.nextLine();
+        SingleLinkedList08 sll = new SingleLinkedList08();
+        
+        for (int i = 0; i < jml; i++) {
+            System.out.println("Data mahasiswa ke-" + (1 + i));
+            System.out.print("NIM : ");
+            String nim = cindy.nextLine();
+            System.out.print("Nama : ");
+            String nama = cindy.nextLine();
+            System.out.print("Kelas : ");
+            String kelas = cindy.nextLine();
+            System.out.print("IPK : ");
+            double ipk = cindy.nextDouble();
+            cindy.nextLine();
+
+            Mahasiswa08 mhs = new Mahasiswa08(nim, nama, kelas, ipk);
+            sll.addLast(mhs);
+            sll.print();
+        }
+```
