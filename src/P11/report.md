@@ -76,3 +76,15 @@ Bimon   23212201        2B      3.8
 Isi Linked List : 
 Bimon   23212201        2B      3.8
 ```
+
+### Pertanyaan Praktikum 2
+1. Mengapa digunakan keyword break pada fungsi remove? Jelaskan!
+    - Break berfungsi untuk menghentikan perulangan setelah data yang dicari ditemukan dan dihapus, jika break dihapus maka loop akan terus berjalan meskipun data yang dicari telah dihapus
+2. Jelaskan kegunaan kode dibawah pada method remove
+```
+temp.next = temp.next.next;
+if (temp.next == null) {
+    tail = temp;
+}
+```
+    - digunakan untuk menghapus node setelah temp dan untuk memperbarui nilai tail jika node yang dihapus adalah node terkahir
