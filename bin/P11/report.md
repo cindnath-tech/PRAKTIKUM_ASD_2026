@@ -88,3 +88,78 @@ if (temp.next == null) {
 }
 ```
     - digunakan untuk menghapus node setelah temp dan untuk memperbarui nilai tail jika node yang dihapus adalah node terkahir
+
+## Tugas
+Hasil run dari tugas : 
+```
+=== Menu Antrian Kemahasiswaan ===
+1. Tambah Antrian
+2. Panggil Antrian
+3. Lihat Antrian
+4. Jumlah Antrian
+5. Kosongkan Antrian
+0. Keluar
+Pilih menu : 1
+Johan sudah masuk ke antrian
+Milen sudah masuk ke antrian
+Dika sudah masuk ke antrian
+
+=== Menu Antrian Kemahasiswaan ===
+1. Tambah Antrian
+2. Panggil Antrian
+3. Lihat Antrian
+4. Jumlah Antrian
+5. Kosongkan Antrian
+0. Keluar
+Pilih menu : 4
+Jumlah mahasiswa dalam antrian : 3
+Daftar Antrian : 
+12457   Johan   2C
+13423   Milen   2E
+14232   Dika    2F
+
+=== Menu Antrian Kemahasiswaan ===
+1. Tambah Antrian
+2. Panggil Antrian
+3. Lihat Antrian
+4. Jumlah Antrian
+5. Kosongkan Antrian
+0. Keluar
+Pilih menu : 2
+Memanggil antrian : 
+12457   Johan   2C
+
+=== Menu Antrian Kemahasiswaan ===
+1. Tambah Antrian
+2. Panggil Antrian
+3. Lihat Antrian
+4. Jumlah Antrian
+5. Kosongkan Antrian
+0. Keluar
+Pilih menu : 3
+Antrian terdepan : 
+13423   Milen   2E
+Antrian paling akhir : 
+14232   Dika    2F
+
+=== Menu Antrian Kemahasiswaan ===
+1. Tambah Antrian
+2. Panggil Antrian
+3. Lihat Antrian
+4. Jumlah Antrian
+5. Kosongkan Antrian
+0. Keluar
+Pilih menu : 5
+Antrian berhasil dikosongkan
+Jumlah mahasiswa dalam antrian : 0
+
+=== Menu Antrian Kemahasiswaan ===
+1. Tambah Antrian
+2. Panggil Antrian
+3. Lihat Antrian
+4. Jumlah Antrian
+5. Kosongkan Antrian
+0. Keluar
+Pilih menu : 0
+Program selesai
+```
