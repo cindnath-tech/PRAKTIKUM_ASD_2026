@@ -25,10 +25,10 @@ public class SingleLinkedList08 {
     public void addFirst(Mahasiswa08 input) { 
         Node08 ndInput = new Node08(input, null);
         if (isEmpty()) {
-            head = ndInput;
-            tail = ndInput;
+            head = ndInput; // head menunjuk ke node baru
+            tail = ndInput; // tail menunjuk ke node baru
         } else {
-            ndInput.next = head;
+            ndInput.next = head; // node baru dihubungkan ke head yg lama
             head = ndInput;
         }
     }
@@ -49,10 +49,10 @@ public class SingleLinkedList08 {
         Node08 temp = head;
         do {
             if (temp.data.nama.equalsIgnoreCase(key)) {
-                ndInput.next = temp.next;
+                ndInput.next = temp.next; // node diarahkan ke node setelah temp
                 temp.next = ndInput;
                 if (ndInput.next == null) {
-                    tail = ndInput;
+                    tail = ndInput; // tail diperbarui jika node baru di terkahir
                 }
                 break;
             }
@@ -70,7 +70,7 @@ public class SingleLinkedList08 {
             for (int i = 0; i < index - 1; i++) {
                 temp = temp.next;
             }
-            temp.next = new Node08(input, temp.next);
+            temp.next = new Node08(input, temp.next); // menyisipkan node baru di posisi yg diinginkan
             if (temp.next.next == null) {
                 tail = temp.next;
             }
@@ -78,7 +78,7 @@ public class SingleLinkedList08 {
     }
 
     public void getData(int index) {
-        Node08 tmp = head;
+        Node08 tmp = head; // traversal dimulai dari head
         for (int i = 0; i < index; i++) {
             tmp = tmp.next;
         }
@@ -106,7 +106,7 @@ public class SingleLinkedList08 {
         } else if (head == tail) {
             head = tail = null;
         } else {
-            head = head.next;
+            head = head.next; // head dipindahkan ke node berikutnya (node sebelumnya dihapus)
         }
     }
 
@@ -117,11 +117,11 @@ public class SingleLinkedList08 {
             head = tail = null;
         } else {
             Node08 temp = head;
-            while (temp.next != tail) {
-                temp = temp.next;
+            while (temp.next != tail) { // mencari node sebelum tail
+                temp = temp.next; // memutus node terkahir
             }
             temp.next = null;
-            tail = temp;
+            tail = temp; // node sebelum tail menjadi tail baru
         }
     }
 
@@ -135,9 +135,9 @@ public class SingleLinkedList08 {
                     this.removeFirst();
                     break;
                 } else if (temp.data.nama.equalsIgnoreCase(key)) {
-                    temp.next = temp.next.next;
+                    temp.next = temp.next.next; //menghapus node tertentu
                     if (temp.next == null) {
-                        tail = temp;
+                        tail = temp; //memperbarui tail jika yg dihapus node terakhir
                     }
                     break;
                 }
