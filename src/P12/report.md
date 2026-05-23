@@ -160,3 +160,89 @@ Nama   : Harry
 Kelas  : 1A
 IPK    : 3.76
 ```
+
+## Percobaan 2
+Hasil run dari percobaan 2 :
+```
+=== MENU DOUBLE LINKED LIST ===
+1. Tambah data di awal
+2. Tambah data di akhir
+3. Sisipkan data di tengah (setelah NIM)
+4. Hapus data di awal
+5. Hapus data di akhir
+6. Tampilakn data
+7. Tampilkan data tertentu
+0. Keluar
+Pilih menu : 2
+Masukkan NIM      : 123005
+Masukkan Nama     : Harry
+Masukkan Kelas    : 1A
+Masukkan IPK      : 3.76
+
+=== MENU DOUBLE LINKED LIST ===
+1. Tambah data di awal
+2. Tambah data di akhir
+3. Sisipkan data di tengah (setelah NIM)
+4. Hapus data di awal
+5. Hapus data di akhir
+6. Tampilakn data
+7. Tampilkan data tertentu
+0. Keluar
+Pilih menu : 3
+Masukkan NIM yang dicari : 123005
+Masukkan data baru : 
+Masukkan NIM      : 123010
+Masukkan Nama     : Potter
+Masukkan Kelas    : 1B
+Masukkan IPK      : 3.55
+Data berhasil disisipkan setelah NIM 123005
+
+=== MENU DOUBLE LINKED LIST ===
+1. Tambah data di awal
+2. Tambah data di akhir
+3. Sisipkan data di tengah (setelah NIM)
+4. Hapus data di awal
+5. Hapus data di akhir
+6. Tampilakn data
+7. Tampilkan data tertentu
+0. Keluar
+Pilih menu : 5
+Data berhasil di hapus
+NIM    : 123010
+Nama   : Potter
+Kelas  : 1B
+IPK    : 3.55
+
+=== MENU DOUBLE LINKED LIST ===
+1. Tambah data di awal
+2. Tambah data di akhir
+3. Sisipkan data di tengah (setelah NIM)
+4. Hapus data di awal
+5. Hapus data di akhir
+6. Tampilakn data
+7. Tampilkan data tertentu
+0. Keluar
+Pilih menu : 6
+NIM    : 123005
+Nama   : Harry
+Kelas  : 1A
+IPK    : 3.76
+```
+
+### Pertanyaan Percobaan 2
+1. Perhatikan potongan kode berikut pada method removeFirst(): 
+head = head.next; 
+head.prev = null; 
+Jelaskan fungsi masing-masing statement tersebut pada proses penghapusan node! 
+    - statement head = head.next berfungsi untuk memindahkan head ke node berikutnya (node lama dihapus dan node setelahnya menjadi head yang baru). Statement head.prev = null berfungsi untuk memutus hubungan node yang baru dengan node lama yang telah dihapus
+2. Modifikasi method removeFirst() dan removeLast() agar program menampilkan data yang berhasil dihapus!
+```
+menambahkan statement berikut pada removeFirst
+Node08 delete = head;
+menambahkan statement berikut pada removeLast
+Node08 delete = tail;
+
+menambahkan kode berikut pada method removeFirst() dan removeLast()
+System.out.println("Data berhasil di hapus");
+delete.data.tampil();
+```

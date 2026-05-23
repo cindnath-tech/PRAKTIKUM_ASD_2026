@@ -78,7 +78,7 @@ public class DoubleLinkedList08 {
     }
 
     public void removeLast() {
-        if (tail == null) {
+        if (isEmpty()) {
             System.out.println("Linked List kosong");
             return;
         }
