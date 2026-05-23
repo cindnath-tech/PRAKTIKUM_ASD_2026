@@ -3,6 +3,7 @@ package P12;
 public class DoubleLinkedList08 {
     Node08 head;
     Node08 tail;
+    int size = 0;
 
     DoubleLinkedList08() {
         head = null;
@@ -32,6 +33,28 @@ public class DoubleLinkedList08 {
             tail.next = newNode;
             newNode.prev = tail;
             tail = newNode;
+        }
+    }
+
+    public void add(int index, Mahasiswa08 data) {
+        if (index < 0 || index > size) {
+            System.out.println("Index di luar batas");
+            return;
+        }
+
+        if (index == 0) {
+            addFirst(data);
+        } else if (index == size) {
+            addLast(data);
+        } else {
+            Node08 current = head;
+            for (int i = 0; i < index; i++) {
+                current = current.next;
+            }
+            Node08 newNode = new Node08(data);
+            current.prev.next = newNode;
+            current.prev = newNode;
+            size++;
         }
     }
 
@@ -94,6 +117,63 @@ public class DoubleLinkedList08 {
         delete.data.tampil();
     }
 
+    public void removeAfter(String key) {
+        Node08 current = head;
+        while (current != null && !current.data.nama.equals(key)) {
+            current = current.next;
+        }
+
+        if (current == null) {
+            System.out.println("Data tidak ditemukan");
+            return;
+        }
+
+        if (current.next == null) {
+            System.out.println("Tidak ada node setelahnya");
+            return;
+        }
+
+        Node08 removeNode = current.next;
+        current.next = removeNode.next;
+        if (removeNode.next != null) {
+            removeNode.next.prev = current;
+        } else {
+            tail = current;
+        }
+        System.out.println("Data yang dihapus : ");
+        removeNode.data.tampil();
+        size--;
+    }
+
+    public void remove(int index) {
+        if (isEmpty()) {
+            System.out.println("Liked List kosong");
+            return;
+        }
+
+        if (index < 0 || index >= size) {
+            System.out.println("Index di luar batas");
+            return;
+        }
+
+        if (index == 0) {
+            removeFirst();
+        } else if (index == size - 1) {
+            removeLast();
+        } else {
+            Node08 current = head;
+            for (int i = 0; i < index; i++) {
+                current = current.next;
+            }
+            current.prev.next = current.next;
+            current.next.prev = current.prev;
+
+            System.out.println("Data yang dihapus : ");
+            current.data.tampil();
+            size--;
+        }
+    }
+
     public void print() {
         if (isEmpty()) {
             System.out.println("Linked List masih kosong");
@@ -119,5 +199,45 @@ public class DoubleLinkedList08 {
             current.data.tampil();
             current = current.prev;
         }
+    }
+
+    public void getFirst() {
+        if (isEmpty()) {
+            System.out.println("Linked List kosong");
+        } else {
+            System.out.println("Data pertama : ");
+            head.data.tampil();
+        }
+    }
+
+    public void getLast() {
+        if (isEmpty()) {
+            System.out.println("Linked List kosong");
+        } else {
+            System.out.println("Data terkahir : ");
+            tail.data.tampil();
+        }
+    }
+
+    public void getIndex(int index) {
+        if (isEmpty()) {
+            System.out.println("Linked List kosong");
+        }
+
+        if (index < 0 || index >= size) {
+            System.out.println("Index di luar batas");
+            return;
+        }
+
+        Node08 current = head;
+        for (int i = 0; i < index; i++) {
+            current = current.next;
+        }
+        System.out.println("Data index ke-" + (i + 1) + " : ");
+        current.data.tampil();
+    }
+
+    public int jumlahData() {
+        return size;
     }
 }

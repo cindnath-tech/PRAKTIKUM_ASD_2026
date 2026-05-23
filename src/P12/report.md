@@ -246,3 +246,138 @@ menambahkan kode berikut pada method removeFirst() dan removeLast()
 System.out.println("Data berhasil di hapus");
 delete.data.tampil();
 ```
+
+## Tugas
+1. Tambahkan method add(int index, Mahasiswa data) untuk menambahkan node pada indeks tertentu! 
+```
+public void add(int index, Mahasiswa08 data) {
+    if (index < 0 || index > size) {
+        System.out.println("Index di luar batas");
+        return;
+    }
+
+    if (index == 0) {
+        addFirst(data);
+    } else if (index == size) {
+        addLast(data);
+    } else {
+        Node08 current = head;
+        for (int i = 0; i < index; i++) {
+            current = current.next;
+        }
+        Node08 newNode = new Node08(data);
+        current.prev.next = newNode;
+        current.prev = newNode;
+        size++;
+    }
+}
+```
+2. Tambahkan method removeAfter() untuk menghapus node setelah node yang memiliki data key tertentu! 
+```
+public void removeAfter(String key) {
+    Node08 current = head;
+    while (current != null && !current.data.nama.equals(key)) {
+        current = current.next;       
+    }
+
+    if (current == null) {
+        System.out.println("Data tidak ditemukan");
+        return;
+    }
+
+    if (current.next == null) {
+        System.out.println("Tidak ada node setelahnya");
+        return;
+    }
+
+    Node08 removeNode = current.next;
+    current.next = removeNode.next;
+    if (removeNode.next != null) {
+        removeNode.next.prev = current;
+    } else {
+        tail = current;
+    }
+    System.out.println("Data yang dihapus : ");
+    removeNode.data.tampil();
+    size--;
+}
+```
+3. Tambahkan method remove(int index) untuk menghapus node pada indeks tertentu! 
+```
+public void remove(int index) {
+    if (isEmpty()) {
+        System.out.println("Liked List kosong");
+        return;
+    }
+
+    if (index < 0 || index >= size) {
+        System.out.println("Index di luar batas");
+        return;
+    }
+
+    if (index == 0) {
+        removeFirst();
+    } else if (index == size - 1) {
+        removeLast();
+    } else {
+        Node08 current = head;
+        for (int i = 0; i < index; i++) {
+            current = current.next;
+        }
+        current.prev.next = current.next;
+        current.next.prev = current.prev;
+
+        System.out.println("Data yang dihapus : ");
+        current.data.tampil();
+        size--;
+    }
+}
+```
+4. Tambahkan method: 
+a. getFirst() 
+b. getLast() 
+c. getIndex() 
+untuk menampilkan data pada node pertama, node terakhir, dan node pada indeks tertentu. 
+```
+public void getFirst() {
+    if (isEmpty()) {
+        System.out.println("Linked List kosong");
+    } else {
+        System.out.println("Data pertama : ");
+        head.data.tampil();
+    }
+}
+
+public void getLast() {
+    if (isEmpty()) {
+        System.out.println("Linked List kosong");
+    } else {
+        System.out.println("Data terkahir : ");
+        tail.data.tampil();
+    }
+}
+
+public void getIndex(int index) {
+    if (isEmpty()) {
+        System.out.println("Linked List kosong");
+    }
+
+    if (index < 0 || index >= size) {
+        System.out.println("Index di luar batas");
+        return;
+    }
+
+    Node08 current = head;
+    for (int i = 0; i < index; i++) {
+        current = current.next;
+    }
+    System.out.println("Data index ke-" + (i + 1) + " : ");
+    current.data.tampil();
+}
+```
+5. Tambahkan atribut dan method untuk menghitung jumlah data (size) pada Double Linked List.
+```
+public int jumlahData() {
+    return size;
+}
+```

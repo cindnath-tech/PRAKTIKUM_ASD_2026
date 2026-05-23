@@ -26,8 +26,14 @@ public class DoubleLinkedListMain08 {
             System.out.println("3. Sisipkan data di tengah (setelah NIM)");
             System.out.println("4. Hapus data di awal");
             System.out.println("5. Hapus data di akhir");
-            System.out.println("6. Tampilakn data");
-            System.out.println("7. Tampilkan data tertentu");
+            System.out.println("6. Hapus data pada index");
+            System.out.println("7. Hapus setelah data tertentu");
+            System.out.println("8. Tampilakn data");
+            System.out.println("9. Tampilkan data tertentu");
+            System.out.println("10. Data pertama");
+            System.out.println("11. Data terkahir");
+            System.out.println("12. Data pada index");
+            System.out.println("13. Jumlah");
             System.out.println("0. Keluar");
             System.out.print("Pilih menu : ");
             pilihan = scan.nextInt();
@@ -55,10 +61,39 @@ public class DoubleLinkedListMain08 {
                     list.removeLast();
                     break;
                 case 6:
-                    list.print();
+                    System.out.print("Masukkan index yang dihapus : ");
+                    int hapusIndex = scan.nextInt();
+                    scan.nextLine();
+
+                    list.remove(hapusIndex);
                     break;
                 case 7:
+                    System.out.print("Masukkan key : ");
+                    String key = scan.nextLine();
+
+                    list.removeAfter(key);
+                    break;
+                case 8:
+                    list.print();
+                    break;
+                case 9:
                     list.printReverse();
+                    break;
+                case 10:
+                    list.getFirst();
+                    break;
+                case 11:
+                    list.getLast();
+                    break;
+                case 12:
+                    System.out.print("Masukkan index : ");
+                    int cariIndex = scan.nextInt();
+                    scan.nextLine();
+
+                    list.getIndex(cariIndex);
+                    break;
+                case 13:
+                    System.out.println("Jumlah data : " +list.jumlahData());
                     break;
                 case 0:
                     System.out.println("Program selesai");
