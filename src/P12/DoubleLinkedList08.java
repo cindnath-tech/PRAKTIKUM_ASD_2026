@@ -62,7 +62,7 @@ public class DoubleLinkedList08 {
 
     public void removeFirst() {
         if (isEmpty()) {
-            System.out.println("Linked List masih kosong");
+            System.out.println("Linked List kosong");
             return;   
         }
 
@@ -79,7 +79,7 @@ public class DoubleLinkedList08 {
 
     public void removeLast() {
         if (tail == null) {
-            System.out.println("Linked List masih kosong");
+            System.out.println("Linked List kosong");
             return;
         }
 
