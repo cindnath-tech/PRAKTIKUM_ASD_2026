@@ -110,3 +110,17 @@ NIM    : 244160205 Nama   : Ehsan Kelas  : D IPK    : 3.61
 NIM    : 244160221 Nama   : Badar Kelas  : B IPK    : 3.75
 NIM    : 244160170 Nama   : Fizi Kelas  : B IPK    : 3.86
 ```
+
+### Pertanyaan Praktikum 2
+1. Apakah kegunaan dari atribut data dan idxLast yang ada di class BinaryTreeArray? 
+    - atribut data digunakan untuk menyimpan seluruh node pada Binary Tree Array dan atribut idxLast digunakan untuk menyimpan indeks terkahir yang memiliki data pada array
+2. Apakah kegunaan dari method populateData()? 
+    - method populateData() digunakan untuk mengisi array dengan node yang sudah dibuat sebelumnya (proses inisialisasi data di class Binary Tree Array)
+3. Apakah kegunaan dari method traverseInOrder()? 
+    - method traverseInOrder digunakan untuk menampilkan data yang sudah terurut dari nilai terkecil ke nilai terbesar
+4. Jika suatu node binary tree disimpan dalam array indeks 2, maka di indeks berapakah posisi left child dan right child masing-masing? 
+    - posisi left child berada pada indeks 5 dan posisi right child berada pada indeks 6
+5. Apa kegunaan statement int idxLast = 6 pada praktikum 2 percobaan nomor 4? 
+    - idxLast = 6 menunjukkan bahwa indeks terkahir adalah indeks 6 sehingga traversal hanya dilakukan sampai indeks terkahir (indeks 6) 
+6. Mengapa indeks 2*idxStart+1 dan 2*idxStart+2 digunakan dalam pemanggilan rekursif, dan apa kaitannya dengan struktur pohon biner yang disusun dalam array?
+    - karena data disimpan dalam bentuk array pada binary tree maka hubungan antara parent dan child ditentukan berdasarkan posisi indeksnya dengan aturan anak kiri berada pada indeks 2 * i (idxStart) + 1 dan anak kanan berada pada indeks 2 * i (idxStart) + 2 sehingga ketika method rekursif ingin memanggil anak kiri dan anak kanan dari suatu node maka program cukup menggunakan aturan tersebut untuk menghitung indeksnya
