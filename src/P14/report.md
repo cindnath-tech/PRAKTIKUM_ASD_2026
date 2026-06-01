@@ -97,3 +97,16 @@ if (mahasiswa.ipk < current.mahasiswa.ipk) {
     - pada baris kode program parent = current digunakan untuk menyimpan node saat ini (current) sebagai parent lalu akan dilakukan pengecekan kondisi apakah IPK yang dimasukkan lebih kecil dari node saat ini. Jika iya, maka data harus ditempatkan di subtree kiri (anak kiri) lalu pointer current akan berpindah ke anak kiri. Jika tidak, maka data harus ditempatkan di subtree kanan (anak kanan) lalu pointer current akan berpindah ke anak kanan. Setelahnya dilakukan pengecekan apakah posisi node saat ini kosong, jika iya node baru akan dipasang sebagai anak kiri atau anak kanan dari parent kiri / parent kanan. Hal tersebut ditentukan setelah dilakukan pengecekan dengan kode 'if (mahasiswa.ipk < current.mahasiswa.ipk) {'
 6. Jelaskan langkah-langkah pada method delete() saat menghapus sebuah node yang memiliki dua anak. Bagaimana method getSuccessor() membantu dalam proses ini?
     - langkah pertama dilakukan pencarian successor menggunakan getSuccessor setelah successor ditemukan, maka successor akan dipindahkan ke posisi node yang ingin dihapus (jika node yang dihapus adalah root, maka root akan digantikan dengan successor). Lalu anak kiri dari node yang ingin dihapus dihubungkan ke successor, kemudian node yang lama akan di hapus
+
+## Praktikum 2
+Hasil run dari praktikum 2 :
+```
+Inorder Traversal Mahasiswa : 
+NIM    : 244160220 Nama   : Dewi Kelas  : B IPK    : 3.35
+NIM    : 244160185 Nama   : Candra Kelas  : C IPK    : 3.41
+NIM    : 244160131 Nama   : Devi Kelas  : A IPK    : 3.48
+NIM    : 244160121 Nama   : Ali Kelas  : A IPK    : 3.57
+NIM    : 244160205 Nama   : Ehsan Kelas  : D IPK    : 3.61
+NIM    : 244160221 Nama   : Badar Kelas  : B IPK    : 3.75
+NIM    : 244160170 Nama   : Fizi Kelas  : B IPK    : 3.86
+```
