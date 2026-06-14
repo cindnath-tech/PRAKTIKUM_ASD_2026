@@ -23,6 +23,7 @@ public class DoubleLinkedList08 {
             head.prev = newNode;
             head = newNode;
         }
+        size++;
     }
 
     public void addLast(Mahasiswa08 data) {
@@ -34,6 +35,7 @@ public class DoubleLinkedList08 {
             newNode.prev = tail;
             tail = newNode;
         }
+        size++;
     }
 
     public void add(int index, Mahasiswa08 data) {
@@ -79,8 +81,9 @@ public class DoubleLinkedList08 {
             newNode.next = current.next;
             current.next.prev = newNode;
             current.next = newNode;
-        }
         System.out.println("Data berhasil disisipkan setelah NIM " + keyNim);
+        size++;
+        }
     }
 
     public void removeFirst() {
@@ -98,6 +101,7 @@ public class DoubleLinkedList08 {
         }
         System.out.println("Data berhasil dihapus");
         delete.data.tampil();
+        size--;
     }
 
     public void removeLast() {
@@ -115,6 +119,7 @@ public class DoubleLinkedList08 {
         }
         System.out.println("Data berhasil di hapus");
         delete.data.tampil();
+        size--;
     }
 
     public void removeAfter(String key) {
@@ -232,8 +237,8 @@ public class DoubleLinkedList08 {
         Node08 current = head;
         for (int i = 0; i < index; i++) {
             current = current.next;
+            System.out.println("Data index ke-" + (i + 1) + " : ");
         }
-        System.out.println("Data index ke-" + (i + 1) + " : ");
         current.data.tampil();
     }
 

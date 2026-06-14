@@ -8,6 +8,7 @@ public class MainAntrian {
 
         DDLPembeli antrian = new DDLPembeli();
         DDLPesanan pesan = new DDLPesanan();
+        LinkedListRekap rekap = new LinkedListRekap(); // untuk tempat menambahkan data baru di rekap
         int pilihan;
         do {
             System.out.println("=====================================");
@@ -17,6 +18,7 @@ public class MainAntrian {
             System.out.println("2. Cetak Antrian");
             System.out.println("3. Hapus Antrian dan Pesan");
             System.out.println("4. Laporan Pesanan");
+            System.out.println("5. Rekap Pesanan");
             System.out.println("0. Keluar");
             System.out.print("Pilih menu : ");
             pilihan = cindy.nextInt(); cindy.nextLine();
@@ -48,6 +50,9 @@ public class MainAntrian {
                     break;
                 case 4:
                     pesan.tampilPesanan();
+                    break;
+                case 5:
+                    rekap.tampilRekap(); // menampilkan rekap pesanan
                     break;
                 case 0:
                     System.out.println("Program selesai");

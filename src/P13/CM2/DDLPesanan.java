@@ -15,7 +15,7 @@ public class DDLPesanan {
     }
 
     public void tambahPesanan(Pesanan psn) {
-        NodePesanan newNode = new NodePesanan(psn);
+        NodePesanan newNode = new NodePesanan(psn); 
 
         if (isEmpty()) {
             head = tail = newNode;
