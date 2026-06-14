@@ -124,3 +124,91 @@ NIM    : 244160170 Nama   : Fizi Kelas  : B IPK    : 3.86
     - idxLast = 6 menunjukkan bahwa indeks terkahir adalah indeks 6 sehingga traversal hanya dilakukan sampai indeks terkahir (indeks 6) 
 6. Mengapa indeks 2*idxStart+1 dan 2*idxStart+2 digunakan dalam pemanggilan rekursif, dan apa kaitannya dengan struktur pohon biner yang disusun dalam array?
     - karena data disimpan dalam bentuk array pada binary tree maka hubungan antara parent dan child ditentukan berdasarkan posisi indeksnya dengan aturan anak kiri berada pada indeks 2 * i (idxStart) + 1 dan anak kanan berada pada indeks 2 * i (idxStart) + 2 sehingga ketika method rekursif ingin memanggil anak kiri dan anak kanan dari suatu node maka program cukup menggunakan aturan tersebut untuk menghitung indeksnya
+
+## Tugas
+1. Buat method di dalam class BinaryTree00 yang akan menambahkan node dengan cara rekursif (addRekursif()). 
+```
+public void addRekursif(Mahasiswa08 mhs) {
+        root = addRekursif(root, mhs);
+    }
+
+public Node08 addRekursif(Node08 current, Mahasiswa08 mhs) {
+    if (current == null) {
+        return new Node08(mhs);
+    }
+
+    if (mhs.ipk < current.mahasiswa.ipk) {
+        current.left = addRekursif(current.left, mhs);
+    } else if (mhs.ipk > current.mahasiswa.ipk) {
+        current.right = addRekursif(current.right, mhs);
+    }
+    return current;
+}
+```
+2. Buat method di dalam class BinaryTree00 untuk menampilkan data mahasiswa dengan IPK paling kecil dan IPK yang paling besar(cariMinIPK() dan cariMaxIPK()) yang ada di dalam binary search tree. 
+```
+public void cariMinIPK() {
+    if (root == null) {
+        System.out.println("Tree kosong");
+        return;
+    }
+
+    Node08 current = root;
+    while (current.left != null) {
+        current = current.left;
+    }
+    System.out.println("\nMahasiswa dengan IPK terkecil : ");
+    current.mahasiswa.tampilInformasi();
+}
+
+public void cariMaxIPK() {
+    if (root == null) {
+        System.out.println("Tree kosong");
+        return;
+    }
+
+    Node08 current = root;
+    while (current.right != null) {
+        current = current.right;
+    }
+    System.out.println("\nMahasiswa dengan IPK terbesar : ");
+    current.mahasiswa.tampilInformasi();
+}
+```
+3. Buat method dalam class BinaryTree00 untuk menampilkan data mahasiswa dengan IPK di atas suatu batas tertentu, misal di atas 3.50 (tampilMahasiswaIPKdiAtas(double ipkBatas)) yang ada di dalam binary search tree. 
+```
+public void tampilkanMahasiswaIPKDiatas(double ipkBatas) {
+    tampilkanMahasiswaIPKDiatas(root, ipkBatas);
+}
+
+public void tampilkanMahasiswaIPKDiatas(Node08 node, double ipkBatas) {
+    if (node != null) {
+        tampilkanMahasiswaIPKDiatas(node.left, ipkBatas);
+        if (node.mahasiswa.ipk > ipkBatas) {
+            node.mahasiswa.tampilInformasi();
+        }
+        tampilkanMahasiswaIPKDiatas(node.right, ipkBatas);
+    }
+}
+```
+4. Modifikasi class BinaryTreeArray00 di atas, dan tambahkan :  
+• method add(Mahasiswa data) untuk memasukkan data ke dalam binary tree  
+• method traversePreOrder()
+```
+public void add(Mahasiswa08 dataBaru) {
+    if (idxLast == dataMahasiswa.length - 1) {
+        System.out.println("Array penuhh");
+        return;
+    }
+    idxLast++;
+    dataMahasiswa[idxLast] = dataBaru;
+}
+
+public void traversePreOrder(int idxStart) {
+    if (idxStart <= idxLast && dataMahasiswa[idxStart] != null) {
+        dataMahasiswa[idxStart].tampilInformasi();
+        traversePreOrder(2 * idxStart + 1);
+        traversePreOrder(2 * idxStart + 2);
+    }
+}
+```

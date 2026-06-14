@@ -22,4 +22,21 @@ public class BinaryTreeArray08 {
             }
         }
     }
+
+    public void add(Mahasiswa08 dataBaru) {
+        if (idxLast == dataMahasiswa.length - 1) {
+            System.out.println("Array penuhh");
+            return;
+        }
+        idxLast++;
+        dataMahasiswa[idxLast] = dataBaru;
+    }
+
+    public void traversePreOrder(int idxStart) {
+        if (idxStart <= idxLast && dataMahasiswa[idxStart] != null) {
+            dataMahasiswa[idxStart].tampilInformasi();
+            traversePreOrder(2 * idxStart + 1);
+            traversePreOrder(2 * idxStart + 2);
+        }
+    }
 }
