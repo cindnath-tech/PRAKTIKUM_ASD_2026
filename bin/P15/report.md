@@ -67,3 +67,49 @@ Melon Durian
 Melon Durian 
 Melon Durian 
 ```
+
+### Pertanyaan Praktikum 2
+1. Apakah perbedaan fungsi push() dan add() pada objek fruits? 
+    - push() digunakan untuk menambahkan elemen baru ke bagian atas (top) stack sedangkan add() digunakan untuk menambahkan elemen baru ke akhir koleksi sehingga output yang dihasilkan akan sama
+2. Silakan hilangkan baris 43 dan 44, apakah yang akan terjadi? Mengapa bisa demikian? 
+```
+Banana Orange Watermelon Leci Salak 
+[Banana, Orange, Watermelon, Leci, Salak]
+Salak Leci Watermelon Orange Banana 
+
+
+```
+    - method push() digunakan untuk menambahkan elemen baru ke bagian atas dari stack, jika method push di hapus maka objek fruits tidak memiliki elemen yang dapat ditampilkan oleh perulangan Iterator sehingga ketika dijalankan "Melon" dan "Durian" tidak akan muncul
+3. Jelaskan fungsi dari baris 46-49? 
+    - kode program tersebut akan membuat objek iterator terlebih dahulu untuk mengakses elemen dalam collection fruits satu per satu, kemudian akan dilakukan pengecekan apakah masih ada elemen berikutnya yang belum terbaca jika ada maka perulangan akan terus berjalan, jika tidak maka perulangan akan berhenti. "it.next" akan mengambil elemen berikutnya dan memindahkan posisi iterator ke elemen berikutnya dan kemudian program akan menampilkan setiap elemen yang telah diperoleh
+4. Silakan ganti baris kode 25, Stack<String> menjadi List<String> dan apakah yang terjadi? Mengapa bisa demikian? 
+    - yang terjadi adalah error pada baris kode yang menggunkan method push, pop, dan empty karena method tersebut tidak ada dalam library List. Program akan tetap berjalan menggunakan List<String> jika di dalamnya tidak terdapat baris kode yang menggunakan method yang tersedia di stack (push, pop, empty, peek, dll)
+5. Ganti elemen terakhir dari dari objek fruits menjadi “Strawberry”! 
+```
+menambahkan kode berikut:
+fruits.set(fruits.size() - 1, "Strawberry");
+
+hasil run:
+Banana Orange Watermelon Leci Strawberry 
+[Banana, Orange, Watermelon, Leci, Strawberry]
+Strawberry Leci Watermelon Orange Banana 
+```
+6. Tambahkan 3 buah seperti “Mango”,”guava”, dan “avocado” kemudian dilakukan sorting!
+```
+menambahkan kode berikut:
+fruits.push("Mango");
+fruits.push("Guava");
+fruits.push("Avocado");
+for (String fruit : fruits) {
+    System.out.printf("%s ", fruit);
+}
+
+Collections.sort(fruits);
+System.out.println("\nSetelah sorting: ");
+System.out.println(fruits);
+
+hasil run:
+Mango Guava Avocado 
+Setelah sorting: 
+[Avocado, Guava, Mango]
+```
