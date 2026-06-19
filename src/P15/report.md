@@ -56,3 +56,14 @@ Elemen 0: Mei-mei total elemen: 6 elemen terkahir: Al-Qarni
 Names: [Mei-mei, My kid, Akhleema, Shannum, Uwais, Al-Qarni]
 ```
     - Method push pada LinkedList bekerja seperti di stack yaitu menambahkan elemen di bagian depan (head) dari linked list
+
+## Praktikum 2
+Hasil run dari praktikum 2 :
+```
+Banana Orange Watermelon Leci Salak 
+[Banana, Orange, Watermelon, Leci, Salak]
+Salak Leci Watermelon Orange Banana 
+Melon Durian 
+Melon Durian 
+Melon Durian 
+```
