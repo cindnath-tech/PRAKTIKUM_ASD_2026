@@ -113,3 +113,17 @@ Mango Guava Avocado
 Setelah sorting: 
 [Avocado, Guava, Mango]
 ```
+
+## Praktikum 3
+Hasil run dari praktikum 3 :
+```
+Mahasiswa{nim = 201234, nama = Noureen, notelp = 021xx1}
+Mahasiswa{nim = 201235, nama = Akhleema, notelp = 021xx2}
+Mahasiswa{nim = 201236, nama = Shannum, notelp = 021xx3}
+
+Mahasiswa{nim = 201234, nama = Noureen, notelp = 021xx1}
+Mahasiswa{nim = 201235, nama = Akhleema Lela, notelp = 021xx2}
+Mahasiswa{nim = 201236, nama = Shannum, notelp = 021xx3}
+```
+
+### Pertanyaan Praktikum 3
