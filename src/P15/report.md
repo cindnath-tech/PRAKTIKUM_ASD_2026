@@ -127,3 +127,41 @@ Mahasiswa{nim = 201236, nama = Shannum, notelp = 021xx3}
 ```
 
 ### Pertanyaan Praktikum 3
+1. Pada fungsi tambah() yang menggunakan unlimited argument itu menggunakan konsep apa? Dan kelebihannya apa? 
+    - menggunakan Varargs (Variable Arguments) dengan beberapa kelebihan sebagai berikut :
+    a. jumlah parameter yang dikirim tidak terbatas
+    b. tidak perlu membuat array secara manual
+    c. kode menjadi lebih sederhana dan fleksibel
+2. Pada fungsi linearSearch() di atas, silakan diganti dengan fungsi binarySearch() dari collection! 
+```
+public int binarySearch(String nim) {
+    Collections.sort(mahasiswas, (a, b) -> a.nim.compareTo(b.nim));
+
+    return Collections.binarySearch(mahasiswas, 
+        new Mahasiswa(nim, "", ""),
+        (a, b) -> a.nim.compareTo(b.nim)
+    );
+}
+```
+3. Tambahkan fungsi sorting baik secara ascending ataupun descending pada class tersebut! 
+```
+Kode :
+public void sortAsc() {
+    Collections.sort(mahasiswas, (a, b) -> a.nim.compareTo(b.nim));
+}
+
+public void sortDesc() {
+    Collections.sort(mahasiswas, (a, b) -> b.nim.compareTo(a.nim));
+}
+
+Hasil run :
+Data Ascending : 
+Mahasiswa{nim = 201234, nama = Noureen, notelp = 021xx1}
+Mahasiswa{nim = 201235, nama = Akhleema Lela, notelp = 021xx2}
+Mahasiswa{nim = 201236, nama = Shannum, notelp = 021xx3}
+
+Data Descending : 
+Mahasiswa{nim = 201236, nama = Shannum, notelp = 021xx3}
+Mahasiswa{nim = 201235, nama = Akhleema Lela, notelp = 021xx2}
+Mahasiswa{nim = 201234, nama = Noureen, notelp = 021xx1}
+```
