@@ -165,3 +165,206 @@ Mahasiswa{nim = 201236, nama = Shannum, notelp = 021xx3}
 Mahasiswa{nim = 201235, nama = Akhleema Lela, notelp = 021xx2}
 Mahasiswa{nim = 201234, nama = Noureen, notelp = 021xx1}
 ```
+
+## Tugas
+Hasil run dari tugas :
+```
+=======================================
+SISTEM PENGOLAHAN DATA NILAI MAHASISWA
+=======================================
+1. Tambah Mahasiswa
+2. Tambah Mata Kuliah
+3. Input Nilai
+4. Tampil Nilai
+5. Mencari Nilai Mahasiswa
+6. Urut Data Nilai
+7. Hapus Nilai
+0. Keluar
+Pilih : 1
+NIM : 20001
+Nama : johan
+No Telp : 31xxx
+Data mahasiswa berhasil ditambahkan
+
+=======================================
+SISTEM PENGOLAHAN DATA NILAI MAHASISWA
+=======================================
+1. Tambah Mahasiswa
+2. Tambah Mata Kuliah
+3. Input Nilai
+4. Tampil Nilai
+5. Mencari Nilai Mahasiswa
+6. Urut Data Nilai
+7. Hapus Nilai
+0. Keluar
+Pilih : 1
+NIM : 20002
+Nama : milen
+No Telp : 31xxx
+Data mahasiswa berhasil ditambahkan
+
+=======================================
+SISTEM PENGOLAHAN DATA NILAI MAHASISWA
+=======================================
+1. Tambah Mahasiswa
+2. Tambah Mata Kuliah
+3. Input Nilai
+4. Tampil Nilai
+5. Mencari Nilai Mahasiswa
+6. Urut Data Nilai
+7. Hapus Nilai
+0. Keluar
+Pilih : 2
+Kode MK : 12345
+Nama MK : aljabar linear
+SKS : 2
+Data mata kuliah berhasil ditambahkan
+
+=======================================
+SISTEM PENGOLAHAN DATA NILAI MAHASISWA
+=======================================
+1. Tambah Mahasiswa
+2. Tambah Mata Kuliah
+3. Input Nilai
+4. Tampil Nilai
+5. Mencari Nilai Mahasiswa
+6. Urut Data Nilai
+7. Hapus Nilai
+0. Keluar
+Pilih : 2
+Kode MK : 12346
+Nama MK : basis data
+SKS : 2
+Data mata kuliah berhasil ditambahkan
+
+=======================================
+SISTEM PENGOLAHAN DATA NILAI MAHASISWA
+=======================================
+1. Tambah Mahasiswa
+2. Tambah Mata Kuliah
+3. Input Nilai
+4. Tampil Nilai
+5. Mencari Nilai Mahasiswa
+6. Urut Data Nilai
+7. Hapus Nilai
+0. Keluar
+Pilih : 3
+
+Daftar Mahasiswa
+1. johan
+2. milen
+Pilih mahasiswa : 1
+
+Daftar Mata Kuliah
+1. aljabar linear
+2. basis data
+Pilih mata kuliah : 1
+Nilai : 95
+Nilai berhasil ditambahkan
+
+=======================================
+SISTEM PENGOLAHAN DATA NILAI MAHASISWA
+=======================================
+1. Tambah Mahasiswa
+2. Tambah Mata Kuliah
+3. Input Nilai
+4. Tampil Nilai
+5. Mencari Nilai Mahasiswa
+6. Urut Data Nilai
+7. Hapus Nilai
+0. Keluar
+Pilih : 4
+
+Daftar Nilai
+NIM     Nama    Mata Kuliah     SKS     Nilai
+20001   johan   aljabar linear  2       95.0
+
+=======================================
+SISTEM PENGOLAHAN DATA NILAI MAHASISWA
+=======================================
+1. Tambah Mahasiswa
+2. Tambah Mata Kuliah
+3. Input Nilai
+4. Tampil Nilai
+5. Mencari Nilai Mahasiswa
+6. Urut Data Nilai
+7. Hapus Nilai
+0. Keluar
+Pilih : 5
+Masukkan NIM : 20002
+
+Hasil Pencarian
+NIM     Nama    Mata Kuliah     SKS     Nilai
+Data tidak ditemukan
+
+=======================================
+SISTEM PENGOLAHAN DATA NILAI MAHASISWA
+=======================================
+1. Tambah Mahasiswa
+2. Tambah Mata Kuliah
+3. Input Nilai
+4. Tampil Nilai
+5. Mencari Nilai Mahasiswa
+6. Urut Data Nilai
+7. Hapus Nilai
+0. Keluar
+Pilih : 3
+
+Daftar Mahasiswa
+1. johan
+2. milen
+Pilih mahasiswa : 2
+
+Daftar Mata Kuliah
+1. aljabar linear
+2. basis data
+Pilih mata kuliah : 2
+Nilai : 85
+Nilai berhasil ditambahkan
+
+=======================================
+SISTEM PENGOLAHAN DATA NILAI MAHASISWA
+=======================================
+1. Tambah Mahasiswa
+2. Tambah Mata Kuliah
+3. Input Nilai
+4. Tampil Nilai
+5. Mencari Nilai Mahasiswa
+6. Urut Data Nilai
+7. Hapus Nilai
+0. Keluar
+Pilih : 6
+
+Data nilai setelah diurutkan
+NIM     Nama    Mata Kuliah     SKS     Nilai
+20002   milen   basis data      2       85.0
+20001   johan   aljabar linear  2       95.0
+
+=======================================
+SISTEM PENGOLAHAN DATA NILAI MAHASISWA
+=======================================
+1. Tambah Mahasiswa
+2. Tambah Mata Kuliah
+3. Input Nilai
+4. Tampil Nilai
+5. Mencari Nilai Mahasiswa
+6. Urut Data Nilai
+7. Hapus Nilai
+0. Keluar
+Pilih : 7
+Nilai johan berhasil dihapus
+
+=======================================
+SISTEM PENGOLAHAN DATA NILAI MAHASISWA
+=======================================
+1. Tambah Mahasiswa
+2. Tambah Mata Kuliah
+3. Input Nilai
+4. Tampil Nilai
+5. Mencari Nilai Mahasiswa
+6. Urut Data Nilai
+7. Hapus Nilai
+0. Keluar
+Pilih : 0
+Program anda selesai!
+```
